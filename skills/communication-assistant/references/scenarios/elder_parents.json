@@ -1,0 +1,930 @@
+{
+  "version": "0.3",
+  "relationship": "年长父母",
+  "note": "全部为原创虚构场景，不含私人真实对话。",
+  "count": 27,
+  "levels": {
+    "1": 9,
+    "2": 9,
+    "3": 9
+  },
+  "scenarios": [
+    {
+      "id": "EP01",
+      "relationship": "年长父母",
+      "level": 1,
+      "topic": "抱怨少打电话",
+      "context": "合成示例：一周没打电话，父母晚饭时语气失落。",
+      "partner_utterance": "忙就忙吧，反正你们也不想家。",
+      "explicit_facts": [
+        "较久未主动联系",
+        "父母表达失落",
+        "用反话"
+      ],
+      "plausible_interpretations": [
+        "想被惦记",
+        "不完全是指责人格"
+      ],
+      "clarifying_question": "您是希望我固定每周打一次，还是有事报平安就好？",
+      "user_intent": "接住牵挂，认领疏忽，定可执行联系节奏",
+      "poor_reply": "又来了，能不能别道德绑架？",
+      "why_poor": "顶撞翻脸",
+      "example_reply": "是我这边少打了，让您空等。不是不想家。我们定每周日晚上我打给您，有事我另发消息，好吗？",
+      "boundaries": "不承诺天天打；不贬低父母情感",
+      "source_ids": [
+        "S6",
+        "S4",
+        "S8"
+      ],
+      "hints": [
+        "先接住牵挂",
+        "认领少联系",
+        "定一个可执行的固定联系"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP02",
+      "relationship": "年长父母",
+      "level": 1,
+      "topic": "劝多穿衣服",
+      "context": "合成示例：出门前父母反复叮嘱添衣。",
+      "partner_utterance": "再加点衣服，冻出病来怎么办？",
+      "explicit_facts": [
+        "父母关心保暖",
+        "用户觉得多余",
+        "唠叨重复"
+      ],
+      "plausible_interpretations": [
+        "表达关心的方式",
+        "焦虑健康"
+      ],
+      "clarifying_question": "您是担心今天风大，还是看我穿得比平时少？",
+      "user_intent": "感谢关心，说明自己有分寸，减少顶嘴",
+      "poor_reply": "都多大了还管穿衣，烦不烦？",
+      "why_poor": "顶撞否认关心",
+      "example_reply": "谢谢爸/妈关心。我口袋里有薄外套，冷了就加。您提醒我了，我心里有数。",
+      "boundaries": "可保留穿着自主",
+      "source_ids": [
+        "S6",
+        "S8",
+        "S1"
+      ],
+      "hints": [
+        "先谢谢关心",
+        "说明自己已有安排",
+        "少顶嘴"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP03",
+      "relationship": "年长父母",
+      "level": 1,
+      "topic": "问吃得怎么样",
+      "context": "合成示例：视频通话，父母反复问有没有好好吃饭。",
+      "partner_utterance": "你又瘦了，在外面是不是不好好吃饭？",
+      "explicit_facts": [
+        "父母评价外貌/进食",
+        "关心饮食",
+        "可能夸张"
+      ],
+      "plausible_interpretations": [
+        "牵挂",
+        "用瘦表达担心"
+      ],
+      "clarifying_question": "您是看我脸瘦了担心，还是想听我最近一日三餐怎么吃？",
+      "user_intent": "接住担心，给具体饮食事实，避免争执瘦不瘦",
+      "poor_reply": "您眼睛花了吧，我明明胖了。",
+      "why_poor": "抬杠",
+      "example_reply": "您是担心我没吃好。我中午有堂食，晚上也按时吃，别太担心。下次视频我把晚饭给您看一眼也行。",
+      "boundaries": "不因压力强制报备一切",
+      "source_ids": [
+        "S6",
+        "S3",
+        "S1"
+      ],
+      "hints": [
+        "翻译成担心",
+        "报具体饮食事实",
+        "可选小行动让对方安心"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP04",
+      "relationship": "年长父母",
+      "level": 1,
+      "topic": "寄特产",
+      "context": "合成示例：父母寄来一大箱食物，怕浪费又感动。",
+      "partner_utterance": "都是给你寄的，不好吃也要吃完啊。",
+      "explicit_facts": [
+        "寄来大量食物",
+        "可能吃不完",
+        "父母要被领情"
+      ],
+      "plausible_interpretations": [
+        "爱的表达",
+        "怕被嫌弃"
+      ],
+      "clarifying_question": "您是希望我尝尝主打的那几样，还是整箱都得迅速吃完？",
+      "user_intent": "感谢，诚实说食量，提出分享/冷冻方案",
+      "poor_reply": "寄这么多浪费钱，下次别寄了。",
+      "why_poor": "否定心意",
+      "example_reply": "谢谢爸妈，我收到很开心。我一个人吃不了这么快，我先冷冻一部分，再分一点给同事，一样是您的心意。",
+      "boundaries": "可商量下次少寄，语气要软",
+      "source_ids": [
+        "S6",
+        "S8",
+        "S2"
+      ],
+      "hints": [
+        "先感谢心意",
+        "诚实说食量",
+        "给不浪费的具体办法"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP05",
+      "relationship": "年长父母",
+      "level": 1,
+      "topic": "不会用手机",
+      "context": "合成示例：父母打来电话问如何操作手机功能。",
+      "partner_utterance": "这个按钮怎么又找不到了？你能不能别不耐烦？",
+      "explicit_facts": [
+        "教手机操作",
+        "父母感到被不耐烦",
+        "重复询问"
+      ],
+      "plausible_interpretations": [
+        "怕麻烦子女",
+        "挫败"
+      ],
+      "clarifying_question": "您是想我一步步口述，还是我远程投屏带您点？",
+      "user_intent": "放慢节奏，步骤化，承认刚才语气",
+      "poor_reply": "说了多少遍了，您到底有没有在听？",
+      "why_poor": "指责认知",
+      "example_reply": "刚才语气急了，对不起。我们一步一步来：先点右上角绿色的那个。您点到了跟我说一声。",
+      "boundaries": "可约固定“技术辅导时间”防随时中断工作",
+      "source_ids": [
+        "S6",
+        "S1",
+        "S8"
+      ],
+      "hints": [
+        "放慢并认领不耐烦",
+        "一步一步",
+        "确认每一步到位"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP06",
+      "relationship": "年长父母",
+      "level": 1,
+      "topic": "念叨邻居家孩子",
+      "context": "合成示例：父母用邻居家孩子对比用户。",
+      "partner_utterance": "你看看人家，哪像你……",
+      "explicit_facts": [
+        "出现比较",
+        "父母可能想激励",
+        "用户不适"
+      ],
+      "plausible_interpretations": [
+        "笨拙的关心",
+        "焦虑面子"
+      ],
+      "clarifying_question": "您是想说为我着急，还是其实在夸邻居？",
+      "user_intent": "温和指出比较刺耳，请直接说担心",
+      "poor_reply": "那您认别人当儿女得了。",
+      "why_poor": "伤人反击",
+      "example_reply": "一比较我就难受。您要是为我着急，直接说担心哪一点，我听；少拿别人压我，好吗？",
+      "boundaries": "保持尊重不翻桌",
+      "source_ids": [
+        "S4",
+        "S8",
+        "S6"
+      ],
+      "hints": [
+        "说出比较的刺痛",
+        "请对方直接说担心",
+        "保持尊重"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP07",
+      "relationship": "年长父母",
+      "level": 1,
+      "topic": "过节能否回去",
+      "context": "合成示例：临近小长假，父母问回不回来。",
+      "partner_utterance": "今年还回来吃饭吗？不回也没关系……",
+      "explicit_facts": [
+        "询问归期",
+        "口是心非式",
+        "行程未定"
+      ],
+      "plausible_interpretations": [
+        "很希望回来",
+        "怕强求被嫌"
+      ],
+      "clarifying_question": "您是更希望我哪天到，还是先听我工作能不能请假？",
+      "user_intent": "诚实行程，给明确是/否与替代方案",
+      "poor_reply": "到时候再说吧。",
+      "why_poor": "含糊增加牵挂",
+      "example_reply": "我这周确认班次。能回的话周五到；回不了我就节日那天视频，再补寄一点你们爱吃的。定了第一时间告诉您。",
+      "boundaries": "不空头承诺车票",
+      "source_ids": [
+        "S2",
+        "S6",
+        "S8"
+      ],
+      "hints": [
+        "避免含糊",
+        "给明确时间点或替代",
+        "定了就通知"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP08",
+      "relationship": "年长父母",
+      "level": 1,
+      "topic": "夸自己做的菜",
+      "context": "合成示例：回家，父母端出菜等评价。",
+      "partner_utterance": "尝尝，按你以前爱吃的做的。",
+      "explicit_facts": [
+        "父母特意做菜",
+        "期待回应",
+        "正面时刻"
+      ],
+      "plausible_interpretations": [
+        "要被看见付出"
+      ],
+      "clarifying_question": "（可选）您这次是不是少放辣了？",
+      "user_intent": "具体赞美，表达被照顾到",
+      "poor_reply": "还行吧，外面更好吃。",
+      "why_poor": "贬低心意",
+      "example_reply": "好香。这个味道对，我一吃就想到家。谢谢您专门做。",
+      "boundaries": "有忌口可温和提，先肯定",
+      "source_ids": [
+        "S6",
+        "S1",
+        "S4"
+      ],
+      "hints": [
+        "具体夸味道/心意",
+        "表达被照顾",
+        "忌口稍后温和提"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP09",
+      "relationship": "年长父母",
+      "level": 1,
+      "topic": "重复讲往事",
+      "context": "合成示例：父母又把同一故事讲第三遍。",
+      "partner_utterance": "我跟你讲过没有？那一年啊……",
+      "explicit_facts": [
+        "故事重复",
+        "父母兴致高",
+        "用户听过"
+      ],
+      "plausible_interpretations": [
+        "要陪伴与见证",
+        "记忆巩固需要"
+      ],
+      "clarifying_question": "您是想再讲一遍细节，还是今天想聊点近况？",
+      "user_intent": "给予耐心陪伴，不打断羞辱",
+      "poor_reply": "讲过八百遍了行吗？",
+      "why_poor": "羞辱",
+      "example_reply": "您讲，我听着。这段我爱听您讲时候的神情。讲完了我们也说说您这周散步怎么样。",
+      "boundaries": "若需办事可约定讲完再办",
+      "source_ids": [
+        "S6",
+        "P1",
+        "S1"
+      ],
+      "hints": [
+        "耐心陪伴不羞辱",
+        "可轻轻接回近况",
+        "需要办事先约定"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP10",
+      "relationship": "年长父母",
+      "level": 2,
+      "topic": "保健品推销",
+      "context": "合成示例：父母被营销打动，要你付款买保健品。",
+      "partner_utterance": "这个专家说能调理，你给我买两盒。",
+      "explicit_facts": [
+        "来源可疑营销",
+        "要求购买",
+        "父母相信"
+      ],
+      "plausible_interpretations": [
+        "怕病/求安心",
+        "被话术推动"
+      ],
+      "clarifying_question": "您是哪里不舒服想调理，还是主要听讲座动心了？",
+      "user_intent": "尊重健康焦虑，不嘲讽，用核实替代立刻付款",
+      "poor_reply": "又被骗了吧，老年人真好骗。",
+      "why_poor": "羞辱认知",
+      "example_reply": "您想调理我懂。我们先别急着付款。把产品名和宣传发给我，我帮您跟靠谱医生/药师对一下，再决定买不买。",
+      "boundaries": "不擅自答应大额；防诈骗",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S3"
+      ],
+      "hints": [
+        "接住健康焦虑",
+        "不嘲讽被骗",
+        "用核实流程替代立刻付钱"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP11",
+      "relationship": "年长父母",
+      "level": 2,
+      "topic": "想帮带孙",
+      "context": "合成示例：父母想长期带孙，小两口有顾虑。",
+      "partner_utterance": "你们不让我带，是觉得我老了没用了？",
+      "explicit_facts": [
+        "提出带孙",
+        "被解读为否定价值",
+        "存在育儿观念差"
+      ],
+      "plausible_interpretations": [
+        "要价值感",
+        "怕被排除"
+      ],
+      "clarifying_question": "您是想多陪孙子，还是也担心我们太累？",
+      "user_intent": "肯定价值，说明边界与协作方式",
+      "poor_reply": "您带不好，别插手。",
+      "why_poor": "贬低能力",
+      "example_reply": "不是觉得您没用。您带孩子我们很感激。有些睡觉喂养我们想按医嘱来，周末想请您一起玩，白天长时间带我们再商量，好吗？",
+      "boundaries": "育儿底线清晰；不抹杀帮助",
+      "source_ids": [
+        "S7",
+        "S2",
+        "S6"
+      ],
+      "hints": [
+        "肯定父母价值",
+        "说明具体育儿边界",
+        "给可参与的时段"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP12",
+      "relationship": "年长父母",
+      "level": 2,
+      "topic": "催婚催生",
+      "context": "合成示例：饭桌上被催什么时候结婚/生娃。",
+      "partner_utterance": "同事家孩子都有宝宝了，你们打算什么时候？",
+      "explicit_facts": [
+        "公开或私下催促",
+        "比较他人",
+        "用户未准备好同步"
+      ],
+      "plausible_interpretations": [
+        "传统期待",
+        "怕来不及"
+      ],
+      "clarifying_question": "您是关心我们规划，还是今天听别人家一对比就着急？",
+      "user_intent": "温和设边界，给有限信息，不激烈开战",
+      "poor_reply": "关您什么事，别烦我！",
+      "why_poor": "顶撞伤关系",
+      "example_reply": "我们知道您盼着。这件事我们自己有节奏，定了会告诉您。今天先不展开比别人家，好吗？",
+      "boundaries": "可不透露细节；避免当众撕破脸",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S4"
+      ],
+      "hints": [
+        "承认盼望",
+        "温和设话题边界",
+        "少当众硬刚"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP13",
+      "relationship": "年长父母",
+      "level": 2,
+      "topic": "反对职业选择",
+      "context": "合成示例：父母反对跳槽/转行/考公等选择。",
+      "partner_utterance": "稳定点不好吗？你这是瞎折腾。",
+      "explicit_facts": [
+        "职业变动争议",
+        "父母要稳定",
+        "用户有自己理由"
+      ],
+      "plausible_interpretations": [
+        "怕风险",
+        "爱的焦虑形式"
+      ],
+      "clarifying_question": "您最担心的是收入不稳，还是怕我以后后悔？",
+      "user_intent": "听担忧，给事实与备案，不求立刻说服",
+      "poor_reply": "您那套过时了。",
+      "why_poor": "贬低世代",
+      "example_reply": "您担心我的稳定，我听到了。我这边的备案是……（事实）。不是否定您的经验，我想让您知道我有想过退路。",
+      "boundaries": "重大决定可听建议不必服从",
+      "source_ids": [
+        "S3",
+        "S8",
+        "S6"
+      ],
+      "hints": [
+        "翻译成担心",
+        "给事实与备案",
+        "不贬低父母经验"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP14",
+      "relationship": "年长父母",
+      "level": 2,
+      "topic": "干涉小家庭开支",
+      "context": "合成示例：父母对小两口买车/装修指手画脚。",
+      "partner_utterance": "这么贵值得吗？听我的，选那个就行。",
+      "explicit_facts": [
+        "大额消费意见不合",
+        "父母强势建议",
+        "小家庭要自主"
+      ],
+      "plausible_interpretations": [
+        "怕吃亏",
+        "想用经验帮忙"
+      ],
+      "clarifying_question": "您是担心我们预算不够，还是有具体坑想提醒？",
+      "user_intent": "感谢提醒，保留最终决定权",
+      "poor_reply": "又不是花您的钱。",
+      "why_poor": "切断连接（若确实花父母钱则另当别论）",
+      "example_reply": "谢谢您提醒可能的坑。预算我们算过了，最终还是我们俩定。您要是有具体注意事项，我记下来。",
+      "boundaries": "若用父母资金需另谈共同决策",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S3"
+      ],
+      "hints": [
+        "感谢具体提醒",
+        "保留决定权",
+        "问清担心点"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP15",
+      "relationship": "年长父母",
+      "level": 2,
+      "topic": "邻居矛盾",
+      "context": "合成示例：父母与邻里不和，要子女出头。",
+      "partner_utterance": "你去给他们评评理，我们老了受气！",
+      "explicit_facts": [
+        "邻里冲突",
+        "要子女介入",
+        "情节待核实"
+      ],
+      "plausible_interpretations": [
+        "要被撑腰",
+        "委屈"
+      ],
+      "clarifying_question": "您是希望我先听完经过，还是已经想投诉/报警？",
+      "user_intent": "先听事实，合法合理协助，不盲目骂战",
+      "poor_reply": "您少惹事行不行？",
+      "why_poor": "责备受害者感",
+      "example_reply": "听您受气了。您先把时间地点经过跟我说清。该沟通我陪您；若涉及安全，我们走正规途径，不靠骂回去。",
+      "boundaries": "不教违法报复",
+      "source_ids": [
+        "S6",
+        "S7",
+        "S3"
+      ],
+      "hints": [
+        "先接住受气",
+        "核实经过",
+        "合法协助不出头骂战"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP16",
+      "relationship": "年长父母",
+      "level": 2,
+      "topic": "饮食医嘱冲突",
+      "context": "合成示例：父母有慢病，不愿按医嘱控盐控糖。",
+      "partner_utterance": "吃那么淡有什么意思，你们少管！",
+      "explicit_facts": [
+        "有医嘱限制",
+        "父母抵触",
+        "子女担心"
+      ],
+      "plausible_interpretations": [
+        "要自主与滋味",
+        "厌烦被监控"
+      ],
+      "clarifying_question": "您是嫌口味，还是讨厌我们老提醒？",
+      "user_intent": "尊重自主同时共担健康风险信息，协商折中",
+      "poor_reply": "不听医嘱生病别找我！",
+      "why_poor": "威胁遗弃式",
+      "example_reply": "口味重要，您的感受我懂。医生说盐会影响……我们能不能一餐淡一点、一餐稍好一点？我来想办法把菜做得香一点。",
+      "boundaries": "不强制搜走所有食物；危急遵医",
+      "source_ids": [
+        "S8",
+        "S2",
+        "S6"
+      ],
+      "hints": [
+        "承认口味与自主",
+        "复述医嘱影响不吓人",
+        "谈折中做法"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP17",
+      "relationship": "年长父母",
+      "level": 2,
+      "topic": "再婚/交友敏感",
+      "context": "合成示例：丧偶父母想重新交友，子女心情复杂。练习接住父母表达。",
+      "partner_utterance": "我想有个人说说话，你们别想歪了。",
+      "explicit_facts": [
+        "父母提出交友需求",
+        "怕被说闲话",
+        "子女需回应"
+      ],
+      "plausible_interpretations": [
+        "孤独",
+        "要尊严"
+      ],
+      "clarifying_question": "您是想多交朋友，还是已经遇到想深入了解的人？",
+      "user_intent": "支持情感需求，谈安全与节奏，少道德审判",
+      "poor_reply": "这么大年纪还想这些，不怕人笑话？",
+      "why_poor": "羞辱",
+      "example_reply": "您想有人说话，完全理解。我们支持您交朋友。也想请您慢慢来，重要决定前跟我们说说，一起留意安全。",
+      "boundaries": "防诈骗；尊重隐私与尊严",
+      "source_ids": [
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "hints": [
+        "支持情感需求",
+        "少道德审判",
+        "谈安全与节奏"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP18",
+      "relationship": "年长父母",
+      "level": 2,
+      "topic": "监控式关心",
+      "context": "合成示例：父母要求分享实时位置、频繁查岗。",
+      "partner_utterance": "位置都不肯开，心里是不是有事？",
+      "explicit_facts": [
+        "要求强监控",
+        "质疑动机",
+        "隐私冲突"
+      ],
+      "plausible_interpretations": [
+        "怕出事",
+        "控制习惯"
+      ],
+      "clarifying_question": "您是担心安全，还是希望我随叫随到？",
+      "user_intent": "理解安全焦虑，设隐私边界，给替代报平安方式",
+      "poor_reply": "监控狂啊您。",
+      "why_poor": "贴标签",
+      "example_reply": "我理解您怕我出事。实时位置我不太想一直开。我可以到公司/到家发您一句，晚上通话报平安，这样行吗？",
+      "boundaries": "成年人隐私；紧急可例外",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S2"
+      ],
+      "hints": [
+        "翻译成安全担心",
+        "清楚隐私边界",
+        "给替代报平安方式"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP19",
+      "relationship": "年长父母",
+      "level": 3,
+      "topic": "拒去医院",
+      "context": "合成示例：明显不适，父母拒绝就医。",
+      "partner_utterance": "别大惊小怪，小毛病自己买点药就行。",
+      "explicit_facts": [
+        "有症状",
+        "拒绝医院",
+        "自行买药倾向"
+      ],
+      "plausible_interpretations": [
+        "怕麻烦/怕结果",
+        "要面子坚强"
+      ],
+      "clarifying_question": "您是怕花钱麻烦，还是怕检查出问题？",
+      "user_intent": "降低就医阻力，给具体陪诊安排，不恐吓",
+      "poor_reply": "不理你了，病死活该。",
+      "why_poor": "残忍威胁",
+      "example_reply": "我知道您不想折腾。我陪您去，挂号我来弄，就做一个基础检查。早查早踏实，不是觉得您娇气。",
+      "boundaries": "急症不拖延；尊重知情",
+      "source_ids": [
+        "S6",
+        "S8",
+        "S2"
+      ],
+      "hints": [
+        "降低阻力：我来安排",
+        "不恐吓病死",
+        "给具体陪诊方案"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP20",
+      "relationship": "年长父母",
+      "level": 3,
+      "topic": "房产遗嘱敏感",
+      "context": "合成示例：提及财产分配，气氛骤紧。",
+      "partner_utterance": "是不是惦记房子了？我们还没走呢！",
+      "explicit_facts": [
+        "谈到房产/遗嘱",
+        "父母感到被催死",
+        "话题敏感"
+      ],
+      "plausible_interpretations": [
+        "恐惧被算计",
+        "误解动机"
+      ],
+      "clarifying_question": "您是觉得我们催得太早，还是担心以后家人起争执？",
+      "user_intent": "澄清动机是减少争执，尊重节奏，可暂停",
+      "poor_reply": "依法该我一份，有什么不能说？",
+      "why_poor": "冷冰冰权利话语",
+      "example_reply": "对不起，让您觉得被惦记。我不是催您。只是怕以后家人吵架。您若现在不想谈，我们放下；您想找律师时我陪您。",
+      "boundaries": "不胁迫签字；法律咨询另寻专业",
+      "source_ids": [
+        "S5",
+        "S7",
+        "S6"
+      ],
+      "hints": [
+        "澄清动机不是催",
+        "承认话题刺痛",
+        "可暂停并保留专业协助"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP21",
+      "relationship": "年长父母",
+      "level": 3,
+      "topic": "赡养分工争执",
+      "context": "合成示例：兄弟姐妹间赡养不均，父母向你诉苦。",
+      "partner_utterance": "也就你还管管，你哥/姐当没我们一样。",
+      "explicit_facts": [
+        "赡养分工不均",
+        "父母抱怨其他子女",
+        "你被拉站队"
+      ],
+      "plausible_interpretations": [
+        "委屈",
+        "也想借你施压"
+      ],
+      "clarifying_question": "您是希望我多陪您，还是希望我去跟哥/姐沟通分工？",
+      "user_intent": "接住委屈，不立刻妖魔化手足，谈可执行支持",
+      "poor_reply": "那您去找他们啊，别只使唤我。",
+      "why_poor": "推开诉苦",
+      "example_reply": "您觉得被冷落了，我难受。我能做的我会做。跟哥/姐那边，我可以帮着商量分工，但不想家里彻底撕破脸。您最需要我先做哪一件？",
+      "boundaries": "不承诺单扛所有；防三角拉扯",
+      "source_ids": [
+        "S6",
+        "S5",
+        "S7"
+      ],
+      "hints": [
+        "接住委屈",
+        "不立刻开战手足",
+        "问最需要的具体支持"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP22",
+      "relationship": "年长父母",
+      "level": 3,
+      "topic": "认知下降争执",
+      "context": "合成示例：父母近期健忘，否认并恼怒被提醒。",
+      "partner_utterance": "我清楚得很，别把我当傻子！",
+      "explicit_facts": [
+        "出现健忘迹象",
+        "父母否认",
+        "提醒引发恼怒"
+      ],
+      "plausible_interpretations": [
+        "恐惧失能",
+        "要尊严"
+      ],
+      "clarifying_question": "您是讨厌我重复提醒，还是担心别人觉得您不行了？",
+      "user_intent": "护尊严，减少纠正口吻，必要时就医协商",
+      "poor_reply": "您看，又忘了吧！",
+      "why_poor": "当众证明错误",
+      "example_reply": "不是把您当傻子。提醒方式是我太生硬了。关键的药和时间我帮着写在板上；若您愿意，我们找医生做个常规检查，图个踏实。",
+      "boundaries": "不擅自剥夺决定权；安全驾驶等另评估",
+      "source_ids": [
+        "S6",
+        "S7",
+        "P1"
+      ],
+      "hints": [
+        "护尊严少纠正炫耀",
+        "改支持性提醒",
+        "温和提就医"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP23",
+      "relationship": "年长父母",
+      "level": 3,
+      "topic": "政治/价值观冲突",
+      "context": "合成示例：饭桌价值观争论升温。",
+      "partner_utterance": "你这想法太危险，跟谁学的？",
+      "explicit_facts": [
+        "观点冲突",
+        "父母上纲上线",
+        "亲情受压"
+      ],
+      "plausible_interpretations": [
+        "怕子女受害",
+        "信息茧房摩擦"
+      ],
+      "clarifying_question": "您是担心我安全，还是我们今天就别争对错？",
+      "user_intent": "降温，保留关系，不辱骂世代",
+      "poor_reply": "您那是封建余毒。",
+      "why_poor": "侮辱",
+      "example_reply": "我们看法不一样。我听到您担心。今天这个话题我们暂停，别伤感情。想聊生活近况我更愿意。",
+      "boundaries": "仇恨/极端言论可拒听；不人身攻击",
+      "source_ids": [
+        "S5",
+        "S7",
+        "S6"
+      ],
+      "hints": [
+        "降温暂停",
+        "翻译成担心",
+        "转回生活连接"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP24",
+      "relationship": "年长父母",
+      "level": 3,
+      "topic": "要搬来同住",
+      "context": "合成示例：父母提出卖掉老家来同住。",
+      "partner_utterance": "我们卖了房子去跟你们住，不好吗？",
+      "explicit_facts": [
+        "提出同住",
+        "涉及大决定",
+        "小家庭空间/边界压力"
+      ],
+      "plausible_interpretations": [
+        "怕老后无人",
+        "想靠近"
+      ],
+      "clarifying_question": "您是更怕以后身边没人，还是已经决定要卖？",
+      "user_intent": "认真对待恐惧，不立刻承诺或回绝羞辱，提出过渡方案",
+      "poor_reply": "想得美，我们小家清静。",
+      "why_poor": "冷酷拒绝",
+      "example_reply": "您想靠近我们，我懂这份心意。卖房是大事，先别急。我们能不能先试一段短住/找附近住，再看长期怎么安排？",
+      "boundaries": "不骗答应；夫妻需共识",
+      "source_ids": [
+        "S2",
+        "S7",
+        "S6"
+      ],
+      "hints": [
+        "接住怕孤独",
+        "阻止冲动卖房",
+        "提可逆的过渡方案"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP25",
+      "relationship": "年长父母",
+      "level": 3,
+      "topic": "葬礼/禁忌冲突",
+      "context": "合成示例：长辈丧事后礼仪安排与小辈意见冲突。",
+      "partner_utterance": "规矩不能破，你们年轻人懂什么！",
+      "explicit_facts": [
+        "礼仪安排争议",
+        "父母要传统",
+        "年轻人有不同考量"
+      ],
+      "plausible_interpretations": [
+        "用规矩处理哀伤",
+        "怕不孝骂名"
+      ],
+      "clarifying_question": "您最看重的是哪一项仪式必须保留？",
+      "user_intent": "尊重哀伤与关键仪式，协商可改项",
+      "poor_reply": "迷信一套，浪费钱。",
+      "why_poor": "亵渎感受",
+      "example_reply": "我知道规矩对您很重要。哪几项必须按老样子，我们听您；有些开支和身体吃不消的环节，我们商量简化，不是不孝。",
+      "boundaries": "尊重信仰差异；防人情绑架无底洞",
+      "source_ids": [
+        "S6",
+        "S2",
+        "S7"
+      ],
+      "hints": [
+        "尊重哀伤与关键仪式",
+        "问必须保留项",
+        "协商可简化部分"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP26",
+      "relationship": "年长父母",
+      "level": 3,
+      "topic": "金钱往来不清",
+      "context": "合成示例：父母借过钱或赠与，后来说法变了。",
+      "partner_utterance": "那钱本来就是给你们的，怎么倒像我小气？",
+      "explicit_facts": [
+        "资金往来事后口径变化",
+        "情感与金钱缠绕"
+      ],
+      "plausible_interpretations": [
+        "要被感激",
+        "记不清",
+        "后悔"
+      ],
+      "clarifying_question": "您希望我们把它当成赠与，还是仍记一笔账？",
+      "user_intent": "降指责，澄清性质，书面化未来规则",
+      "poor_reply": "您怎么说话不算数？",
+      "why_poor": "当面指控失忆/无信",
+      "example_reply": "不是说您小气。钱和感情搅在一起容易难受。我们按您现在的意思来；以后大额我们写清楚是借还是给，避免大家伤心。",
+      "boundaries": "大额建议留痕；防三角债",
+      "source_ids": [
+        "S3",
+        "S5",
+        "S7"
+      ],
+      "hints": [
+        "降指责",
+        "澄清借/赠",
+        "约定未来留痕"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "EP27",
+      "relationship": "年长父母",
+      "level": 3,
+      "topic": "临终关怀话题",
+      "context": "合成示例：父母主动提起“以后不要抢救”等意愿。",
+      "partner_utterance": "到时候别乱救，别让我受罪。",
+      "explicit_facts": [
+        "谈临终意愿",
+        "情绪沉重",
+        "需认真倾听"
+      ],
+      "plausible_interpretations": [
+        "要尊严与掌控",
+        "也在试探子女态度"
+      ],
+      "clarifying_question": "您是已经想清楚具体意愿，还是想先让我们知道您怕什么？",
+      "user_intent": "严肃倾听，不打断笑话，记录意愿并建议正规文件",
+      "poor_reply": "别说晦气的，还早着呢。",
+      "why_poor": "回避关闭话题",
+      "example_reply": "我听着，这很重要。您怕的是受罪和没有尊严。我们找时间正经记下来，需要的话咨询医生/律师，按您的意愿办。",
+      "boundaries": "非医疗建议；引导合法预立文件",
+      "source_ids": [
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "hints": [
+        "严肃听不回避",
+        "确认怕的是什么",
+        "导向书面与专业协助"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    }
+  ]
+}

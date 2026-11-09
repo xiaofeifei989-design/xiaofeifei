@@ -1,0 +1,119 @@
+{
+  "version": "0.3",
+  "note": "按关系拆分的场景库索引",
+  "relationships": [
+    {
+      "relationship": "夫妻",
+      "file": "couple.json",
+      "id_prefix": "CP",
+      "count": 30,
+      "levels": {
+        "1": 10,
+        "2": 10,
+        "3": 10
+      },
+      "unlock": {
+        "level2_requires": "level1 complete and avg>=7",
+        "level3_requires": "level2 complete and avg>=7"
+      },
+      "round_size": 3
+    },
+    {
+      "relationship": "亲子",
+      "file": "parent_child.json",
+      "id_prefix": "PC",
+      "count": 27,
+      "levels": {
+        "1": 9,
+        "2": 9,
+        "3": 9
+      },
+      "unlock": {
+        "level2_requires": "level1 complete and avg>=7",
+        "level3_requires": "level2 complete and avg>=7"
+      },
+      "round_size": 3
+    },
+    {
+      "relationship": "年长父母",
+      "file": "elder_parents.json",
+      "id_prefix": "EP",
+      "count": 27,
+      "levels": {
+        "1": 9,
+        "2": 9,
+        "3": 9
+      },
+      "unlock": {
+        "level2_requires": "level1 complete and avg>=7",
+        "level3_requires": "level2 complete and avg>=7"
+      },
+      "round_size": 3
+    },
+    {
+      "relationship": "上下级",
+      "file": "hierarchy.json",
+      "id_prefix": "SL",
+      "count": 27,
+      "levels": {
+        "1": 9,
+        "2": 9,
+        "3": 9
+      },
+      "unlock": {
+        "level2_requires": "level1 complete and avg>=7",
+        "level3_requires": "level2 complete and avg>=7"
+      },
+      "round_size": 3
+    },
+    {
+      "relationship": "客户",
+      "file": "client.json",
+      "id_prefix": "CL",
+      "count": 27,
+      "levels": {
+        "1": 9,
+        "2": 9,
+        "3": 9
+      },
+      "unlock": {
+        "level2_requires": "level1 complete and avg>=7",
+        "level3_requires": "level2 complete and avg>=7"
+      },
+      "round_size": 3
+    },
+    {
+      "relationship": "同事",
+      "file": "colleague.json",
+      "id_prefix": "CO",
+      "count": 27,
+      "levels": {
+        "1": 9,
+        "2": 9,
+        "3": 9
+      },
+      "unlock": {
+        "level2_requires": "level1 complete and avg>=7",
+        "level3_requires": "level2 complete and avg>=7"
+      },
+      "round_size": 3
+    },
+    {
+      "relationship": "好友",
+      "file": "friend.json",
+      "id_prefix": "FR",
+      "count": 27,
+      "levels": {
+        "1": 9,
+        "2": 9,
+        "3": 9
+      },
+      "unlock": {
+        "level2_requires": "level1 complete and avg>=7",
+        "level3_requires": "level2 complete and avg>=7"
+      },
+      "round_size": 3
+    }
+  ],
+  "total_scenarios": 192
+}

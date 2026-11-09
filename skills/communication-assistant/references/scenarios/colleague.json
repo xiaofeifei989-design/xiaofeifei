@@ -1,0 +1,913 @@
+{
+  "version": "0.3",
+  "relationship": "同事",
+  "note": "全部为原创虚构场景，不含私人真实对话。",
+  "count": 27,
+  "levels": {
+    "1": 9,
+    "2": 9,
+    "3": 9
+  },
+  "scenarios": [
+    {
+      "id": "CO01",
+      "relationship": "同事",
+      "level": 1,
+      "topic": "信息不同步",
+      "context": "合成示例：你改了需求没同步，同事返工。",
+      "partner_utterance": "你怎么不早说？我这周全白做了。",
+      "explicit_facts": [
+        "对方返工",
+        "信息未同步",
+        "不满"
+      ],
+      "plausible_interpretations": [
+        "要尊重时间",
+        "要流程"
+      ],
+      "clarifying_question": "你是希望我补同步纪要，还是一起找补救减少损失？",
+      "user_intent": "认领同步失误，立刻补救",
+      "poor_reply": "你也没来问我啊。",
+      "why_poor": "甩锅",
+      "example_reply": "是我改了没同步，让你白做了，抱歉。我现在把变更点发群里，看哪些还能复用，今晚一起过一版。",
+      "boundaries": "不承诺无限陪改",
+      "source_ids": [
+        "S3",
+        "W1",
+        "S6"
+      ],
+      "hints": [
+        "认领同步失误",
+        "立刻补信息",
+        "一起减损失"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO02",
+      "relationship": "同事",
+      "level": 1,
+      "topic": "求助被拒感",
+      "context": "合成示例：你频繁求助，同事表达边界。",
+      "partner_utterance": "我也忙，别什么事都找我。",
+      "explicit_facts": [
+        "对方设边界",
+        "你曾多次求助"
+      ],
+      "plausible_interpretations": [
+        "过载",
+        "要你先自助"
+      ],
+      "clarifying_question": "你是希望我先写清问题再找你，还是指定答疑时段？",
+      "user_intent": "尊重边界，改请求方式",
+      "poor_reply": "同事不帮同事？",
+      "why_poor": "道德绑架",
+      "example_reply": "明白，是我打扰多了。我先自己查，整理成三点再问；或我们定个短答疑点。谢谢你以往帮过。",
+      "boundaries": "紧急可标优先级",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S6"
+      ],
+      "hints": [
+        "尊重边界",
+        "改成结构化请求",
+        "感谢既往"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO03",
+      "relationship": "同事",
+      "level": 1,
+      "topic": "会议抢话",
+      "context": "合成示例：会上被打断。",
+      "partner_utterance": "你能不能让人把话说完？",
+      "explicit_facts": [
+        "你打断了对方",
+        "对方直接指出"
+      ],
+      "plausible_interpretations": [
+        "要尊重",
+        "内容争执次要"
+      ],
+      "clarifying_question": "你希望我先听完再补，还是会后双人对齐？",
+      "user_intent": "立刻停止打断并道歉，请对方继续",
+      "poor_reply": "你讲太慢了。",
+      "why_poor": "再伤一次",
+      "example_reply": "抱歉打断了。请你先讲完，我记笔记，最后再补充。",
+      "boundaries": "时间盒可会后说",
+      "source_ids": [
+        "S6",
+        "S8",
+        "W1"
+      ],
+      "hints": [
+        "立刻道歉打断",
+        "请对方继续",
+        "会后再补"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO04",
+      "relationship": "同事",
+      "level": 1,
+      "topic": "协作致谢",
+      "context": "合成示例：同事加班帮你对数据。",
+      "partner_utterance": "多亏你昨晚帮我对了数据，不然今天交不了。",
+      "explicit_facts": [
+        "对方感谢你",
+        "正面时刻"
+      ],
+      "plausible_interpretations": [
+        "要连接",
+        "也可能铺垫下次"
+      ],
+      "clarifying_question": "（可选）下次这类对账要不要做成清单？",
+      "user_intent": "谦逊承接，巩固协作",
+      "poor_reply": "应该的，你也欠我一次。",
+      "why_poor": "变交易感",
+      "example_reply": "举手之劳。你主责那块也很关键。下次我们提前列清单，少熬夜。",
+      "boundaries": "不夸大自己",
+      "source_ids": [
+        "S6",
+        "S1",
+        "S4"
+      ],
+      "hints": [
+        "谦逊承接",
+        "肯定对方",
+        "优化下次流程"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO05",
+      "relationship": "同事",
+      "level": 1,
+      "topic": "请假交接",
+      "context": "合成示例：同事突然请假要你顶。",
+      "partner_utterance": "明天我请半天，客户那封邮件你帮看一下？",
+      "explicit_facts": [
+        "临时托付",
+        "范围略糊"
+      ],
+      "plausible_interpretations": [
+        "信任你",
+        "也可能丢锅"
+      ],
+      "clarifying_question": "只要监控升级，还是需要我直接回复客户？",
+      "user_intent": "澄清范围与权限再答应",
+      "poor_reply": "又是我？",
+      "why_poor": "抱怨先行",
+      "example_reply": "可以。请把背景和权限要点发我；若要对外回复，给话术边界。我请假时段每两小时扫一次。",
+      "boundaries": "超范围需上级",
+      "source_ids": [
+        "S3",
+        "S8",
+        "S7"
+      ],
+      "hints": [
+        "先澄清范围",
+        "要背景",
+        "约定扫视频率"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO06",
+      "relationship": "同事",
+      "level": 1,
+      "topic": "文档写不清",
+      "context": "合成示例：你接手同事文档发现难懂。",
+      "partner_utterance": "按文档做就行，别老来问。",
+      "explicit_facts": [
+        "文档不足",
+        "对方不愿被打扰"
+      ],
+      "plausible_interpretations": [
+        "忙",
+        "防御批评"
+      ],
+      "clarifying_question": "我把疑问整理成五条评论，你方便集中回吗？",
+      "user_intent": "减少打扰，结构化问题，不人身批评",
+      "poor_reply": "你这文档谁看得懂？",
+      "why_poor": "人身攻击式",
+      "example_reply": "理解你忙。我把卡点整理成五条批注，请你集中回一次；回完我尽量不再打断。",
+      "boundaries": "关键阻塞可升级",
+      "source_ids": [
+        "W1",
+        "S8",
+        "S3"
+      ],
+      "hints": [
+        "结构化问题",
+        "减少打扰",
+        "不人身贬文档作者"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO07",
+      "relationship": "同事",
+      "level": 1,
+      "topic": "共用会议室冲突",
+      "context": "合成示例：会议室 dual book。",
+      "partner_utterance": "我们先订的，你们怎么进来了？",
+      "explicit_facts": [
+        "资源冲突",
+        "双方都有理可能"
+      ],
+      "plausible_interpretations": [
+        "要公平",
+        "要马上用"
+      ],
+      "clarifying_question": "你场是不可移的客户会，还是内部讨论？",
+      "user_intent": "对事协商，查系统，给让步或证据",
+      "poor_reply": "谁先占谁的。",
+      "why_poor": "幼稚对抗",
+      "example_reply": "先查日历系统。若你们确是客户硬场，我们换房；若都是内部，看谁更能挪。目标是别耽误事。",
+      "boundaries": "不抢设备冲突升级",
+      "source_ids": [
+        "S5",
+        "S3",
+        "S8"
+      ],
+      "hints": [
+        "查系统事实",
+        "按客户硬场优先",
+        "协商挪场"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO08",
+      "relationship": "同事",
+      "level": 1,
+      "topic": "噪音打扰",
+      "context": "合成示例：开放办公区电话过大。",
+      "partner_utterance": "你能不能小点声？我这边在写方案。",
+      "explicit_facts": [
+        "你被提醒音量",
+        "对方在深度工作"
+      ],
+      "plausible_interpretations": [
+        "要专注",
+        "非针对个人"
+      ],
+      "clarifying_question": "我去电话间，还是你戴降噪也行？",
+      "user_intent": "立刻调整，不争对错",
+      "poor_reply": "办公室本来就这样。",
+      "why_poor": "否认影响",
+      "example_reply": "好，我这就去电话间。影响你写方案了抱歉。",
+      "boundaries": "公共区规则",
+      "source_ids": [
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "hints": [
+        "立刻调整",
+        "简短致歉",
+        "给替代方案"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO09",
+      "relationship": "同事",
+      "level": 1,
+      "topic": "分享成功",
+      "context": "合成示例：同事分享项目上线成功。",
+      "partner_utterance": "我们组今天终于上线了！",
+      "explicit_facts": [
+        "正面分享",
+        "要祝贺"
+      ],
+      "plausible_interpretations": [
+        "要被看见"
+      ],
+      "clarifying_question": "最难的一关是什么？",
+      "user_intent": "具体祝贺，不抢镜",
+      "poor_reply": "我们更早就上过了。",
+      "why_poor": "比较抢镜",
+      "example_reply": "恭喜！看你们熬那两周联调不容易。最难的那关是怎么过的？改天请教。",
+      "boundaries": "真诚",
+      "source_ids": [
+        "S6",
+        "S1",
+        "S4"
+      ],
+      "hints": [
+        "具体祝贺",
+        "问亮点",
+        "不比较"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO10",
+      "relationship": "同事",
+      "level": 2,
+      "topic": "甩锅风险",
+      "context": "合成示例：事故复盘，同事暗示责任在你。",
+      "partner_utterance": "这个锅怎么算到我头上了？明明是你对接的。",
+      "explicit_facts": [
+        "责任争议",
+        "公开或半公开",
+        "需对事"
+      ],
+      "plausible_interpretations": [
+        "自保",
+        "事实不清"
+      ],
+      "clarifying_question": "我们按时间线列各自动作，还是先共同对客补救？",
+      "user_intent": "对事复盘，先补救，不贴锅标签互喷",
+      "poor_reply": "就是你的问题！",
+      "why_poor": "对撞",
+      "example_reply": "先别定锅。时间线上我对接了A，你负责B。对外补救我们一起；对内按事实写改进，避免再犯。",
+      "boundaries": "留痕；不伪造",
+      "source_ids": [
+        "W1",
+        "S3",
+        "S5"
+      ],
+      "hints": [
+        "先补救",
+        "时间线对事",
+        "改进重于互喷"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO11",
+      "relationship": "同事",
+      "level": 2,
+      "topic": "功劳归属",
+      "context": "合成示例：汇报材料没提协作组。",
+      "partner_utterance": "汇报材料怎么没提我们组？",
+      "explicit_facts": [
+        "可见度被忽略",
+        "对方不满"
+      ],
+      "plausible_interpretations": [
+        "要公平可见",
+        "绩效相关"
+      ],
+      "clarifying_question": "你希望我补发更正，还是下次共同署名规范？",
+      "user_intent": "承认疏漏，补救可见度",
+      "poor_reply": "主贡献是我们，别计较。",
+      "why_poor": "贬低贡献",
+      "example_reply": "是我疏忽了，抱歉。我今天补发一版致谢与贡献说明，并抄送相关领导。下次共同材料先互相过目。",
+      "boundaries": "不夸大对方也不抹杀",
+      "source_ids": [
+        "S4",
+        "S8",
+        "W1"
+      ],
+      "hints": [
+        "认疏漏",
+        "立刻补材料",
+        "约定互审"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO12",
+      "relationship": "同事",
+      "level": 2,
+      "topic": "隐性加班文化",
+      "context": "合成示例：同事暗示你早退不合群。",
+      "partner_utterance": "也就你准点走，我们都还在。",
+      "explicit_facts": [
+        "准点下班被阴阳",
+        "文化压力"
+      ],
+      "plausible_interpretations": [
+        "压力转嫁",
+        "要你留下"
+      ],
+      "clarifying_question": "你是手头真有紧急要我帮忙，还是觉得我不该准点？",
+      "user_intent": "温和持边界，开放紧急帮忙",
+      "poor_reply": "你们自愿加班关我什么事。",
+      "why_poor": "冷漠",
+      "example_reply": "我今天事项收尾了。若有紧急阻塞，你说，我可以远程支持一刻钟；没有的话我按计划走，明天一早接力。",
+      "boundaries": "不道德绑架；不攻击加班者",
+      "source_ids": [
+        "S7",
+        "S8",
+        "W1"
+      ],
+      "hints": [
+        "持边界",
+        "开放紧急协助",
+        "不阴阳回去"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO13",
+      "relationship": "同事",
+      "level": 2,
+      "topic": "代码/方案被改",
+      "context": "合成示例：未经沟通同事大改你方案。",
+      "partner_utterance": "我看那样不好，直接改了，你别介意。",
+      "explicit_facts": [
+        "未沟通改动",
+        "可能有改进也有越界"
+      ],
+      "plausible_interpretations": [
+        "求快",
+        "忽视协作"
+      ],
+      "clarifying_question": "改动原因是正确性还是风格？关键处能否先评再合？",
+      "user_intent": "要协作规则，肯定可能优点，设评审",
+      "poor_reply": "谁让你动我的东西？",
+      "why_poor": "领地攻击",
+      "example_reply": "改对的地方谢谢。关键路径请先评再合，避免我不知情上线。我们定个小规则：大改先开说明。",
+      "boundaries": "按团队规范",
+      "source_ids": [
+        "W1",
+        "S8",
+        "S3"
+      ],
+      "hints": [
+        "肯定有效改动",
+        "设先评再合",
+        "定小规则"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO14",
+      "relationship": "同事",
+      "level": 2,
+      "topic": "跨部门推诿",
+      "context": "合成示例：跨部门事项无人认领。",
+      "partner_utterance": "这不归我们，你们自己想办法。",
+      "explicit_facts": [
+        "推诿",
+        "事项悬空",
+        "客户/进度压力"
+      ],
+      "plausible_interpretations": [
+        "真无资源",
+        "甩责"
+      ],
+      "clarifying_question": "按职责矩阵谁主责？若空缺我们是否一起升级？",
+      "user_intent": "拉职责与升级，不互相骂",
+      "poor_reply": "每次都这样！",
+      "why_poor": "抱怨无解",
+      "example_reply": "理解资源紧。按矩阵若空缺，我们共同升级给双方经理定主责。在此之前我列出最小必做项避免客户受损。",
+      "boundaries": "升级有据",
+      "source_ids": [
+        "W1",
+        "S3",
+        "S5"
+      ],
+      "hints": [
+        "谈职责矩阵",
+        "共同升级",
+        "列最小必做"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO15",
+      "relationship": "同事",
+      "level": 2,
+      "topic": "八卦传到当事人",
+      "context": "合成示例：你在背后抱怨被当事人知晓。",
+      "partner_utterance": "有话不能当面说，要在背后说我？",
+      "explicit_facts": [
+        "背后议论被曝光",
+        "信任裂"
+      ],
+      "plausible_interpretations": [
+        "要尊重",
+        "愤怒"
+      ],
+      "clarifying_question": "你希望我解释当时情境，还是先听你感受？",
+      "user_intent": "认错方式，当面修复，不抵赖",
+      "poor_reply": "谁传的？我要去对质。",
+      "why_poor": "转移焦点",
+      "example_reply": "是我不当面说却在背后抱怨，抱歉。你的感受合理。我们现在把具体分歧摊开，以后我直接找你。",
+      "boundaries": "不供出传话者整肃",
+      "source_ids": [
+        "S5",
+        "S4",
+        "S6"
+      ],
+      "hints": [
+        "认方式错误",
+        "听感受",
+        "改当面沟通"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO16",
+      "relationship": "同事",
+      "level": 2,
+      "topic": "资源争用",
+      "context": "合成示例：测试环境/设计资源争夺。",
+      "partner_utterance": "我们更急，这资源得先给我们。",
+      "explicit_facts": [
+        "稀缺资源",
+        "双方紧急",
+        "需仲裁标准"
+      ],
+      "plausible_interpretations": [
+        "真急",
+        "策略性宣称"
+      ],
+      "clarifying_question": "紧急的判据是客户外部日期还是内部偏好？",
+      "user_intent": "用客观标准协商，或请上级仲裁",
+      "poor_reply": "凭什么你们优先？",
+      "why_poor": "对抗",
+      "example_reply": "都急的话，看外部客户日期与影响面。你给截止日期证据，我给我们的；比不过我们让，或一起找经理排。",
+      "boundaries": "不偷偷占用",
+      "source_ids": [
+        "W1",
+        "S3",
+        "S8"
+      ],
+      "hints": [
+        "用客观标准",
+        "要证据",
+        "可升级仲裁"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO17",
+      "relationship": "同事",
+      "level": 2,
+      "topic": "远程协作时差",
+      "context": "合成示例：远程同事抱怨你总在他休息时间找。",
+      "partner_utterance": "你们总在我夜里甩问题，我没法睡。",
+      "explicit_facts": [
+        "时差打扰",
+        "异步协作差"
+      ],
+      "plausible_interpretations": [
+        "要边界",
+        "要更好异步"
+      ],
+      "clarifying_question": "你希望我只留文档不@，还是约定重叠窗口？",
+      "user_intent": "尊重时区，改异步习惯",
+      "poor_reply": "全球团队就这样。",
+      "why_poor": "否认体验",
+      "example_reply": "影响你休息了抱歉。紧急才@；其余进文档。我们定每日重叠一小时同步，其余异步。",
+      "boundaries": "真紧急定义清楚",
+      "source_ids": [
+        "S7",
+        "S6",
+        "W1"
+      ],
+      "hints": [
+        "致歉打扰",
+        "异步优先",
+        "定重叠窗口"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO18",
+      "relationship": "同事",
+      "level": 2,
+      "topic": "带教抱怨",
+      "context": "合成示例：新人觉得你带教太凶/太甩。",
+      "partner_utterance": "你要么不管我，一管就凶，我压力好大。",
+      "explicit_facts": [
+        "带教方式被反馈",
+        "新人压力"
+      ],
+      "plausible_interpretations": [
+        "要安全又要成长"
+      ],
+      "clarifying_question": "你更需要步骤清单，还是希望我改语气？",
+      "user_intent": "接受反馈，调整方式，保持标准",
+      "poor_reply": "社会就是这样。",
+      "why_poor": "压人",
+      "example_reply": "反馈收到：是我语气急、支持不稳。我改成清单+定时答疑；标准还在，语气我调整。你卡点随时标“阻塞”。",
+      "boundaries": "质量标准不放水",
+      "source_ids": [
+        "S6",
+        "W1",
+        "S8"
+      ],
+      "hints": [
+        "接受方式反馈",
+        "清单化支持",
+        "标准保留"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO19",
+      "relationship": "同事",
+      "level": 3,
+      "topic": "站队施压",
+      "context": "合成示例：部门斗争要你站队。",
+      "partner_utterance": "你到底站哪边？别两面讨好。",
+      "explicit_facts": [
+        "站队压力",
+        "关系政治",
+        "风险高"
+      ],
+      "plausible_interpretations": [
+        "拉帮",
+        "不安全"
+      ],
+      "clarifying_question": "你要我支持的是具体方案，还是对人站队？",
+      "user_intent": "对事不站队整人，守职业边界",
+      "poor_reply": "我谁也不站。",
+      "why_poor": "过短易被解读逃避（可扩展）",
+      "example_reply": "对人站队我不参与。具体方案上，我认为风险在……。我按事实与目标表态，不参与整人。",
+      "boundaries": "防报复；可向上级中立汇报",
+      "source_ids": [
+        "W1",
+        "S7",
+        "S8"
+      ],
+      "hints": [
+        "拒绝对人站队",
+        "对方案谈事实",
+        "守边界"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO20",
+      "relationship": "同事",
+      "level": 3,
+      "topic": "性骚扰旁观",
+      "context": "合成示例：同事对另一人讲不当玩笑，你在场被问立场。",
+      "partner_utterance": "你也觉得我反应过度吧？",
+      "explicit_facts": [
+        "不当言论现场",
+        "要你背书",
+        "受害者可能在场"
+      ],
+      "plausible_interpretations": [
+        "要同盟",
+        "试探"
+      ],
+      "clarifying_question": "——直接表态即可",
+      "user_intent": "不附和伤害，清楚反对，支持被冒犯者",
+      "poor_reply": "哈哈大家开玩笑而已。",
+      "why_poor": "二次伤害",
+      "example_reply": "我不觉得这是无伤玩笑。这样的话不合适，请停止。需要的话我可以一起把情况反映给合适的人。",
+      "boundaries": "安全优先；正式渠道",
+      "source_ids": [
+        "S7",
+        "S8",
+        "W1"
+      ],
+      "hints": [
+        "不附和",
+        "清楚请停止",
+        "提供上报支持"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO21",
+      "relationship": "同事",
+      "level": 3,
+      "topic": "绩效互害",
+      "context": "合成示例：强制分布下同事暗示互相踩。",
+      "partner_utterance": "这次名额就一个，你懂我意思。",
+      "explicit_facts": [
+        "竞争性绩效",
+        "暗示踩踏",
+        "伦理冲突"
+      ],
+      "plausible_interpretations": [
+        "自保",
+        "拉你结盟踩第三方"
+      ],
+      "clarifying_question": "你是想公平展示各自成果，还是要我一起贬别人？",
+      "user_intent": "拒绝踩踏，主张靠成果",
+      "poor_reply": "行，我们一起搞他。",
+      "why_poor": "进入互害",
+      "example_reply": "名额竞争我理解。靠贬别人我不参与。我们把成果写清楚交给评估；需要交叉确认事实可以，抹黑不行。",
+      "boundaries": "反不正当手段",
+      "source_ids": [
+        "S7",
+        "W1",
+        "S8"
+      ],
+      "hints": [
+        "拒绝踩踏",
+        "靠成果",
+        "可交叉确认事实"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO22",
+      "relationship": "同事",
+      "level": 3,
+      "topic": "离职挖人",
+      "context": "合成示例：离职同事挖你一起走。",
+      "partner_utterance": "跟我一起走吧，那边更好。",
+      "explicit_facts": [
+        "挖角",
+        "可能竞业",
+        "关系私人化"
+      ],
+      "plausible_interpretations": [
+        "真看好你",
+        "完成KPI"
+      ],
+      "clarifying_question": "你是友情分享机会，还是已经在对方有推荐奖金？",
+      "user_intent": "独立判断，注意合规，不仓促",
+      "poor_reply": "你们公司怎么样待遇说清楚！（当场深聊泄密）",
+      "why_poor": "易泄密/冲动",
+      "example_reply": "谢谢你想到我。我自己评估节奏与合规（竞业等）。工作时间不深聊跳槽细节；私下我了解公开信息后再说。",
+      "boundaries": "竞业/保密；工作时间",
+      "source_ids": [
+        "S7",
+        "S8",
+        "W1"
+      ],
+      "hints": [
+        "感谢但不仓促",
+        "注意竞业保密",
+        "公私分开"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO23",
+      "relationship": "同事",
+      "level": 3,
+      "topic": "事故甩到实习生",
+      "context": "合成示例：有人想把锅甩给职级最低者。",
+      "partner_utterance": "反正写他名字就行，他抗造。",
+      "explicit_facts": [
+        "拟不公正定责",
+        "你被拉入"
+      ],
+      "plausible_interpretations": [
+        "自保冷酷"
+      ],
+      "clarifying_question": "复盘不是按好欺负的人来吧？我们按事实？",
+      "user_intent": "拒绝不公，坚持事实定责",
+      "poor_reply": "嗯随便。",
+      "why_poor": "共谋",
+      "example_reply": "不同意按好欺负定责。按时间线写事实与改进。职级低不是背锅理由；该谁的责任谁承担，我的部分我认。",
+      "boundaries": "保护弱势同事",
+      "source_ids": [
+        "W1",
+        "S7",
+        "S3"
+      ],
+      "hints": [
+        "拒绝不公定责",
+        "按时间线",
+        "认自己的部分"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO24",
+      "relationship": "同事",
+      "level": 3,
+      "topic": "办公室恋情影响协作",
+      "context": "合成示例：同事因私人关系影响排班，他人不满传到你。",
+      "partner_utterance": "你们俩排班是不是太巧了，别人怎么想？",
+      "explicit_facts": [
+        "观感问题",
+        "可能不公",
+        "需谨慎"
+      ],
+      "plausible_interpretations": [
+        "要公平",
+        "八卦"
+      ],
+      "clarifying_question": "你看到的是排班不公的事实，还是主要是传言？",
+      "user_intent": "对事谈规则，不羞辱隐私",
+      "poor_reply": "关你屁事。",
+      "why_poor": "封死",
+      "example_reply": "若排班让人觉得不公，我们可以公开规则与轮换。私人关系不在这讨论；工作分配按规则来，欢迎监督。",
+      "boundaries": "隐私；回避制度遵从公司",
+      "source_ids": [
+        "S7",
+        "S8",
+        "W1"
+      ],
+      "hints": [
+        "谈公开规则",
+        "不羞辱隐私",
+        "欢迎对事监督"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO25",
+      "relationship": "同事",
+      "level": 3,
+      "topic": "举报报复担忧",
+      "context": "合成示例：你准备如实上报问题，同事威胁。",
+      "partner_utterance": "你要是上报，同事以后都不好做。",
+      "explicit_facts": [
+        "阻报导",
+        "集体压力",
+        "合规事项"
+      ],
+      "plausible_interpretations": [
+        "怕连坐",
+        "利益"
+      ],
+      "clarifying_question": "你担心的是打击报复，还是问题本身不该报？",
+      "user_intent": "坚持合规，说明保护路径",
+      "poor_reply": "那我不管了。",
+      "why_poor": "屈服违规",
+      "example_reply": "问题该走正式渠道。报复不符合规则，我会留存记录。目标是改进；隐瞒我做不到。",
+      "boundaries": "合法保护；可咨询合规",
+      "source_ids": [
+        "S7",
+        "W1",
+        "S8"
+      ],
+      "hints": [
+        "坚持合规",
+        "说明不报复原则",
+        "留存记录"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO26",
+      "relationship": "同事",
+      "level": 3,
+      "topic": "公开邮件抄送羞辱",
+      "context": "合成示例：被人大范围抄送质问。",
+      "partner_utterance": "（群发）请XXX解释为何一错再错。",
+      "explicit_facts": [
+        "公开质问",
+        "颜面受损",
+        "需专业回应"
+      ],
+      "plausible_interpretations": [
+        "施压",
+        "真有问题"
+      ],
+      "clarifying_question": "——用回复对齐事实",
+      "user_intent": "简短对事回复，邀私下深聊，不回骂",
+      "poor_reply": "（群发回骂）你才一错再错！",
+      "why_poor": "公开火并",
+      "example_reply": "收到。事实时间线如下……。改进措施……。细节我约你和主管私下对齐，避免邮件误读。",
+      "boundaries": "必要抄送可控",
+      "source_ids": [
+        "W1",
+        "S5",
+        "S8"
+      ],
+      "hints": [
+        "对事短答",
+        "列事实与改进",
+        "邀私下对齐"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CO27",
+      "relationship": "同事",
+      "level": 3,
+      "topic": "裁员名单传言",
+      "context": "合成示例：裁员传言让团队互相猜疑。",
+      "partner_utterance": "听说要裁，你消息灵通，到底谁倒霉？",
+      "explicit_facts": [
+        "谣言",
+        "打探",
+        "信任危机"
+      ],
+      "plausible_interpretations": [
+        "恐惧",
+        "套话"
+      ],
+      "clarifying_question": "你是想确认官方信息渠道，还是听小道？",
+      "user_intent": "不传播谣言，导向官方，安抚但不假保证",
+      "poor_reply": "听说有你。",
+      "why_poor": "伤害",
+      "example_reply": "小道我不传。以官方通知为准。我知道的是大家焦虑正常；有确切信息我会按公司口径同步，不会私下点名。",
+      "boundaries": "无权限不泄露",
+      "source_ids": [
+        "S6",
+        "W1",
+        "S7"
+      ],
+      "hints": [
+        "不传小道",
+        "导向官方",
+        "不假保证不点名"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    }
+  ]
+}

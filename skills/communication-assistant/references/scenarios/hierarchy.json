@@ -1,0 +1,951 @@
+{
+  "version": "0.3",
+  "relationship": "上下级",
+  "note": "全部为原创虚构场景，不含私人真实对话。",
+  "count": 27,
+  "levels": {
+    "1": 9,
+    "2": 9,
+    "3": 9
+  },
+  "scenarios": [
+    {
+      "id": "SL01",
+      "relationship": "上下级",
+      "level": 1,
+      "user_role": "下级",
+      "topic": "当众被批",
+      "context": "合成示例：会议上被上级当众批评细节失误。",
+      "partner_utterance": "这点事都做不好，你怎么当的负责人？",
+      "explicit_facts": [
+        "公开场合批评",
+        "有具体失误",
+        "语气重"
+      ],
+      "plausible_interpretations": [
+        "要结果",
+        "也可能情绪化表达"
+      ],
+      "clarifying_question": "您希望我会后立刻给修正方案，还是先对齐优先级？",
+      "user_intent": "保持体面，对事认领，会后给方案，不当场争辩人格",
+      "poor_reply": "您也没说清楚啊！",
+      "why_poor": "当众顶撞",
+      "example_reply": "这个问题我来改。会后一小时内我提交修正版和防再发措施，您看是否需要现在先对齐范围。",
+      "boundaries": "不自我人格贬低过头；严重当众羞辱可事后一对一反馈",
+      "source_ids": [
+        "W1",
+        "S8",
+        "S3"
+      ],
+      "hints": [
+        "对事认领不争辩人格",
+        "给时间点与交付物",
+        "场合克制"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL02",
+      "relationship": "上下级",
+      "level": 1,
+      "user_role": "下级",
+      "topic": "要进度",
+      "context": "合成示例：上级催进度，你有阻塞。",
+      "partner_utterance": "怎么还没好？客户在等。",
+      "explicit_facts": [
+        "进度延迟",
+        "存在阻塞",
+        "客户压力"
+      ],
+      "plausible_interpretations": [
+        "要可控预期",
+        "不一定要甩锅"
+      ],
+      "clarifying_question": "您更想先听阻塞点，还是先听我能给出的新时间？",
+      "user_intent": "报事实阻塞+新预期+需要的支持，不空承诺",
+      "poor_reply": "急也没用，资源就这些。",
+      "why_poor": "甩锅式推脱",
+      "example_reply": "目前卡在接口联调，责任方是X。我今天能交付A，完整版预计周四；若能协调X今天下午，可提前一天。",
+      "boundaries": "不编造时间",
+      "source_ids": [
+        "W1",
+        "S3",
+        "S8"
+      ],
+      "hints": [
+        "说清阻塞事实",
+        "给分层交付与新时间",
+        "提出需要的支持"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL03",
+      "relationship": "上下级",
+      "level": 1,
+      "user_role": "下级",
+      "topic": "模糊反馈",
+      "context": "合成示例：上级说“再打磨打磨”，标准不清。",
+      "partner_utterance": "感觉还差点意思，你再改改。",
+      "explicit_facts": [
+        "反馈模糊",
+        "需要返工",
+        "标准未明示"
+      ],
+      "plausible_interpretations": [
+        "有隐性标准",
+        "尚未想清"
+      ],
+      "clarifying_question": "您更在意结构、数据准确性，还是表达语气？",
+      "user_intent": "澄清验收标准，确认优先级",
+      "poor_reply": "那您到底要怎样？",
+      "why_poor": "顶撞",
+      "example_reply": "我按您的方向改。为少返工，请您标一下必须改的三点；我今天下午前提交对照版。",
+      "boundaries": "可要求书面要点",
+      "source_ids": [
+        "W1",
+        "S3",
+        "S8"
+      ],
+      "hints": [
+        "澄清验收点",
+        "确认优先级",
+        "约定提交时间"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL04",
+      "relationship": "上下级",
+      "level": 1,
+      "user_role": "上级",
+      "topic": "下属迟到交付",
+      "context": "合成示例：下属再次迟交，态度尚可。",
+      "partner_utterance": "这次又晚了点，但质量我自己觉得还行。",
+      "explicit_facts": [
+        "迟交发生",
+        "下属自评质量",
+        "需管理预期"
+      ],
+      "plausible_interpretations": [
+        "轻视时效",
+        "也可能有隐藏阻塞"
+      ],
+      "clarifying_question": "晚的原因是优先级冲突，还是估算不足？",
+      "user_intent": "对事指出影响，设明确期望，问需要支持",
+      "poor_reply": "你总是这样，靠不住。",
+      "why_poor": "人格否定",
+      "example_reply": "质量我待会看。迟交会影响下游联调，这点需要改。下次截止前一天同步风险。需要我帮你挡别的需求吗？",
+      "boundaries": "不当众羞辱",
+      "source_ids": [
+        "W1",
+        "S8",
+        "S3"
+      ],
+      "hints": [
+        "谈影响不对人",
+        "明确期望",
+        "询问支持"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL05",
+      "relationship": "上下级",
+      "level": 1,
+      "user_role": "上级",
+      "topic": "下属求助",
+      "context": "合成示例：下属卡住来找你。",
+      "partner_utterance": "我卡了两天了，您有空带我看一下吗？",
+      "explicit_facts": [
+        "明确求助",
+        "已自行尝试一段时间"
+      ],
+      "plausible_interpretations": [
+        "要指导",
+        "也可能要你直接做"
+      ],
+      "clarifying_question": "你已经试过哪些路径？最卡的是哪一步？",
+      "user_intent": "教练式帮忙，不立刻接手全部",
+      "poor_reply": "这么简单也要问？",
+      "why_poor": "羞辱",
+      "example_reply": "可以。你先说已尝试的两步和报错。我们一起定位；我帮你拆下一步，完整实现仍由你收尾。",
+      "boundaries": "紧急可代做但要说明",
+      "source_ids": [
+        "W1",
+        "S6",
+        "S8"
+      ],
+      "hints": [
+        "先听已尝试",
+        "教练而非全盘接手",
+        "约定谁收尾"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL06",
+      "relationship": "上下级",
+      "level": 1,
+      "user_role": "下级",
+      "topic": "表扬时刻",
+      "context": "合成示例：上级公开肯定你的成果。",
+      "partner_utterance": "这次做得不错，客户挺满意。",
+      "explicit_facts": [
+        "正面反馈",
+        "公开或私下表扬"
+      ],
+      "plausible_interpretations": [
+        "认可",
+        "也可能铺垫新任务"
+      ],
+      "clarifying_question": "您希望我把经验同步给组里，还是先复盘风险点？",
+      "user_intent": "得体承接，分享团队，不自夸过度",
+      "poor_reply": "那是当然，早就该涨薪。",
+      "why_poor": "当场索取破坏气氛",
+      "example_reply": "谢谢认可。也离不开同事配合。我整理一页要点同步团队；若有下一步期望请告诉我。",
+      "boundaries": "薪酬另约正式场合",
+      "source_ids": [
+        "S6",
+        "W1",
+        "S8"
+      ],
+      "hints": [
+        "得体感谢",
+        "归功协作",
+        "问下一步期望"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL07",
+      "relationship": "上下级",
+      "level": 1,
+      "user_role": "上级",
+      "topic": "认可下属",
+      "context": "合成示例：下属完成棘手任务来同步。",
+      "partner_utterance": "按您说的，那个坑我填上了。",
+      "explicit_facts": [
+        "下属完成困难任务",
+        "等待回应"
+      ],
+      "plausible_interpretations": [
+        "要看见",
+        "要下一步"
+      ],
+      "clarifying_question": "过程里有没有需要我帮你排除的障碍？",
+      "user_intent": "具体表扬行为，询问支持",
+      "poor_reply": "嗯，那是你本分。",
+      "why_poor": "冷淡打击动机",
+      "example_reply": "填这个坑不容易，尤其是联调那段。辛苦了。你写的备注很清楚。接下来若还有依赖方卡你，早点让我知道。",
+      "boundaries": "表扬要具体",
+      "source_ids": [
+        "S6",
+        "W1",
+        "S4"
+      ],
+      "hints": [
+        "具体点出行为",
+        "肯定价值",
+        "打开支持通道"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL08",
+      "relationship": "上下级",
+      "level": 1,
+      "user_role": "下级",
+      "topic": "会议跑题被点名",
+      "context": "合成示例：会上被点名回答未准备的问题。",
+      "partner_utterance": "你怎么看？给个结论。",
+      "explicit_facts": [
+        "突然点名",
+        "信息不足",
+        "要结论"
+      ],
+      "plausible_interpretations": [
+        "要担当",
+        "测试临场"
+      ],
+      "clarifying_question": "您需要我现在给倾向性判断，还是会后提交数据依据？",
+      "user_intent": "诚实边界+可给的临时判断+补齐时间",
+      "poor_reply": "我不知道，没准备。",
+      "why_poor": "只甩手无下一步",
+      "example_reply": "完整数据我还没齐，现在只能给倾向：……。会后两点前我补依据给您。",
+      "boundaries": "不编造数据",
+      "source_ids": [
+        "W1",
+        "S3",
+        "S8"
+      ],
+      "hints": [
+        "诚实说信息边界",
+        "给临时判断",
+        "承诺补齐时间"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL09",
+      "relationship": "上下级",
+      "level": 1,
+      "user_role": "上级",
+      "topic": "下属提出想法",
+      "context": "合成示例：下属主动提改进建议。",
+      "partner_utterance": "我有个想法，可能能缩短两天周期。",
+      "explicit_facts": [
+        "下属贡献想法",
+        "待评估"
+      ],
+      "plausible_interpretations": [
+        "要被认真对待"
+      ],
+      "clarifying_question": "你有没有粗估成本与风险？",
+      "user_intent": "鼓励建言，要求结构化，不立刻拍死或空夸",
+      "poor_reply": "想想就行了，别耽误正事。",
+      "why_poor": "打击建言",
+      "example_reply": "谢谢提出来。你用半页写清假设、成本、风险，我们周五评审；有价值就试一小步。",
+      "boundaries": "资源有限需排序",
+      "source_ids": [
+        "W1",
+        "S6",
+        "S8"
+      ],
+      "hints": [
+        "鼓励建言",
+        "要结构化材料",
+        "给明确评审点"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL10",
+      "relationship": "上下级",
+      "level": 2,
+      "user_role": "下级",
+      "topic": "不合理截止日期",
+      "context": "合成示例：上级要求下周必须上线，资源不足。",
+      "partner_utterance": "这个下周必须上线，别跟我说资源不够。",
+      "explicit_facts": [
+        "强硬截止日期",
+        "资源缺口",
+        "风险高"
+      ],
+      "plausible_interpretations": [
+        "外部压力",
+        "不愿听约束"
+      ],
+      "clarifying_question": "必须上线的是全量，还是可接受一个最小可用范围？",
+      "user_intent": "用范围/风险/选项对话，不直接硬顶或瞎承诺",
+      "poor_reply": "做不到就是做不到。",
+      "why_poor": "无方案拒绝",
+      "example_reply": "全量风险是……。选项A：最小范围周三上；选项B：加人保全量但质量风险上升。您选哪个，我按选择排期。",
+      "boundaries": "不隐瞒重大风险",
+      "source_ids": [
+        "W1",
+        "W2",
+        "S8"
+      ],
+      "hints": [
+        "提供可选方案",
+        "说清风险",
+        "请对方做选择"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL11",
+      "relationship": "上下级",
+      "level": 2,
+      "user_role": "下级",
+      "topic": "背锅风险",
+      "context": "合成示例：跨部门事故，上级暗示你担责对外。",
+      "partner_utterance": "对外就说是执行问题，你先顶一下。",
+      "explicit_facts": [
+        "要求对外担责",
+        "事实可能不完全如此",
+        "压力大"
+      ],
+      "plausible_interpretations": [
+        "保护组织面子",
+        "也可能推责"
+      ],
+      "clarifying_question": "您是希望我对外统一口径，还是内部复盘也按这个定责？",
+      "user_intent": "区分对外口径与对内事实，保护职业诚信",
+      "poor_reply": "凭什么我背？",
+      "why_poor": "情绪对抗无结构",
+      "example_reply": "对外我可以先致歉并说明补救。对内复盘请按事实记责任与改进，避免下次同样问题。您看这样是否可行？",
+      "boundaries": "不伪造证据；违法指令可拒绝",
+      "source_ids": [
+        "W1",
+        "S7",
+        "S8"
+      ],
+      "hints": [
+        "区分对外与对内",
+        "守住事实",
+        "提出补救与改进"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL12",
+      "relationship": "上下级",
+      "level": 2,
+      "user_role": "上级",
+      "topic": "下属抵触反馈",
+      "context": "合成示例：绩效反馈时下属情绪抵触。",
+      "partner_utterance": "您每次都这样说，我不知道还能怎么改。",
+      "explicit_facts": [
+        "反馈循环受阻",
+        "下属无力感",
+        "需具体化"
+      ],
+      "plausible_interpretations": [
+        "标准不清",
+        "防御"
+      ],
+      "clarifying_question": "你最希望我把哪一条改成可观察的行为标准？",
+      "user_intent": "把反馈变具体可观察，共同定下一步",
+      "poor_reply": "别人都能做到，就你不行。",
+      "why_poor": "比较羞辱",
+      "example_reply": "说得虚是我的问题。我们改成可观察的：例如周报提前一天、阻塞当天同步。你选一项这周先改，我周五只看这一项。",
+      "boundaries": "不翻旧账堆砌",
+      "source_ids": [
+        "W1",
+        "S3",
+        "S8"
+      ],
+      "hints": [
+        "承认反馈太虚",
+        "改成可观察行为",
+        "一次只盯一项"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL13",
+      "relationship": "上下级",
+      "level": 2,
+      "user_role": "上级",
+      "topic": "下属家庭困难",
+      "context": "合成示例：下属提出近期难加班。",
+      "partner_utterance": "这周家里有事，能不能别再临时加需求了？",
+      "explicit_facts": [
+        "提出家庭约束",
+        "临时加需求成问题",
+        "需协调"
+      ],
+      "plausible_interpretations": [
+        "要边界",
+        "仍想负责"
+      ],
+      "clarifying_question": "这周哪些事项必须你本人，哪些可以移交？",
+      "user_intent": "尊重边界，重排优先级，不道德绑架",
+      "poor_reply": "关键时刻你就掉链子。",
+      "why_poor": "道德绑架",
+      "example_reply": "理解你家里有事。我们把本周必须项缩到两条，其余我帮你改期或转交。你把不可用时段发我。",
+      "boundaries": "业务底线可坦白；不刺探隐私",
+      "source_ids": [
+        "S7",
+        "W1",
+        "S6"
+      ],
+      "hints": [
+        "尊重家庭边界",
+        "重排优先级",
+        "明确移交"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL14",
+      "relationship": "上下级",
+      "level": 2,
+      "user_role": "下级",
+      "topic": "争取资源",
+      "context": "合成示例：向上级要人手/预算。",
+      "partner_utterance": "预算很紧，你们先克服一下。",
+      "explicit_facts": [
+        "资源被拒",
+        "业务目标仍在",
+        "需谈判"
+      ],
+      "plausible_interpretations": [
+        "真紧",
+        "也可能未看到价值"
+      ],
+      "clarifying_question": "若不能加人，目标是否可以同步下调？",
+      "user_intent": "把资源与目标绑定，给取舍选项",
+      "poor_reply": "那目标我也没法保。",
+      "why_poor": "甩手",
+      "example_reply": "理解预算紧。选项：保目标需X资源；或维持现资源则目标改为Y。您定取舍，我按决定执行并每周预警。",
+      "boundaries": "不私下挖人破坏流程",
+      "source_ids": [
+        "W1",
+        "W2",
+        "S8"
+      ],
+      "hints": [
+        "资源与目标绑定",
+        "给取舍",
+        "承诺预警"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL15",
+      "relationship": "上下级",
+      "level": 2,
+      "user_role": "上级",
+      "topic": "下属越级汇报",
+      "context": "合成示例：发现下属经常越级找更大领导。",
+      "partner_utterance": "我找上上边更快，您别介意。",
+      "explicit_facts": [
+        "越级发生",
+        "下属辩解效率",
+        "管理关系受损"
+      ],
+      "plausible_interpretations": [
+        "真有阻塞",
+        "也可能规避你"
+      ],
+      "clarifying_question": "是我响应慢，还是事项必须更高层拍板？",
+      "user_intent": "谈协作规则，先自检响应，不情绪惩罚",
+      "poor_reply": "再越级你就别干了。",
+      "why_poor": "威胁",
+      "example_reply": "效率我在意。若我阻塞，请先标紧急找我；必须高层拍板的，我们一起去。单独频繁越级会让信息不齐，影响我帮你挡炮火。",
+      "boundaries": "公司政策优先",
+      "source_ids": [
+        "W1",
+        "S7",
+        "S8"
+      ],
+      "hints": [
+        "先自检阻塞",
+        "定升级规则",
+        "说明信息对齐的必要性"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL16",
+      "relationship": "上下级",
+      "level": 2,
+      "user_role": "下级",
+      "topic": "价值观冲突指令",
+      "context": "合成示例：被要求对客户做夸大承诺。",
+      "partner_utterance": "先答应下来，大不了以后再解释。",
+      "explicit_facts": [
+        "要求过度承诺",
+        "诚信风险",
+        "来自上级"
+      ],
+      "plausible_interpretations": [
+        "短视拿单",
+        "压力传导"
+      ],
+      "clarifying_question": "您是希望我争取时间谈判范围，还是接受虚假可交付的表述？",
+      "user_intent": "提出合规替代话术，拒绝造假",
+      "poor_reply": "那是骗人，我不干！",
+      "why_poor": "道德制高点硬刚，易封对话",
+      "example_reply": "我可以全力争取订单。不能承诺我们做不到的交付。我准备了真实范围+分期方案，您看能否用这个谈。",
+      "boundaries": "违法造假可拒绝并记录",
+      "source_ids": [
+        "W1",
+        "S7",
+        "S8"
+      ],
+      "hints": [
+        "给合规替代方案",
+        "清楚不能造假",
+        "保持可合作语气"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL17",
+      "relationship": "上下级",
+      "level": 2,
+      "user_role": "上级",
+      "topic": "团队士气低",
+      "context": "合成示例：连续加班后下属代表诉苦。",
+      "partner_utterance": "大家都快撑不住了，您到底知不知道？",
+      "explicit_facts": [
+        "集体疲劳信号",
+        "情绪强烈",
+        "需回应"
+      ],
+      "plausible_interpretations": [
+        "要被看见",
+        "要减负或意义"
+      ],
+      "clarifying_question": "最伤士气的是时长、朝令夕改，还是缺少认可？",
+      "user_intent": "承认负荷，给具体减负动作，不空喊拼搏",
+      "poor_reply": "想做好事业就别喊累。",
+      "why_poor": "空洞鸡汤+否定",
+      "example_reply": "我听到撑不住了。这周需求我砍两条，值班我重新排。拼搏我感激，但不能靠透支。你帮我收集三条最耗人的流程。",
+      "boundaries": "不承诺无法兑现的招人",
+      "source_ids": [
+        "W1",
+        "S6",
+        "S5"
+      ],
+      "hints": [
+        "承认负荷",
+        "立刻可感的减负",
+        "收集具体痛点"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL18",
+      "relationship": "上下级",
+      "level": 2,
+      "user_role": "下级",
+      "topic": "被抢功",
+      "context": "合成示例：成果汇报中被上级归到自己名下。",
+      "partner_utterance": "这套方案我跟上面说了，反响不错。",
+      "explicit_facts": [
+        "方案主要是你做",
+        "上级对外归功自己",
+        "你在场"
+      ],
+      "plausible_interpretations": [
+        "习惯性拿功",
+        "也可能无心"
+      ],
+      "clarifying_question": "后续材料需要我具名补充贡献说明吗？",
+      "user_intent": "专业维护可见度，不公开撕破脸",
+      "poor_reply": "明明是我做的！",
+      "why_poor": "当场撕破",
+      "example_reply": "反响好是好事。细节和实施是我主导的，需要的话我补一页贡献说明方便上面了解团队。您看会后怎么同步更合适？",
+      "boundaries": "保留证据；走正规绩效渠道",
+      "source_ids": [
+        "W1",
+        "S8",
+        "S4"
+      ],
+      "hints": [
+        "不公开撕破",
+        "用补材料维护可见度",
+        "会后澄清"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL19",
+      "relationship": "上下级",
+      "level": 3,
+      "user_role": "下级",
+      "topic": "疑似打压",
+      "context": "合成示例：关键机会连续被排除，感觉被打压。",
+      "partner_utterance": "你先做好手上的，露脸的事先放放。",
+      "explicit_facts": [
+        "机会被挡",
+        "理由笼统",
+        "关系紧张"
+      ],
+      "plausible_interpretations": [
+        "真有能力顾虑",
+        "打压排挤"
+      ],
+      "clarifying_question": "您认为我还缺哪项可验证的能力，多久评估一次？",
+      "user_intent": "要可验证标准与时间，避免纯情绪指控",
+      "poor_reply": "您就是打压我。",
+      "why_poor": "直接定性",
+      "example_reply": "我想成长也想贡献。请您给出可验证的标准与下一次评估时间；达标请让我参与类似机会。若方便，也请明示目前的顾虑。",
+      "boundaries": "歧视/违法走正式渠道",
+      "source_ids": [
+        "W1",
+        "S8",
+        "S7"
+      ],
+      "hints": [
+        "要可验证标准",
+        "约定评估时间",
+        "少纯情绪定性"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL20",
+      "relationship": "上下级",
+      "level": 3,
+      "user_role": "上级",
+      "topic": "下属公开顶撞",
+      "context": "合成示例：会上下属公开质疑你的决定。",
+      "partner_utterance": "这个决定明显有问题，我不同意。",
+      "explicit_facts": [
+        "公开反对",
+        "需维护会议效能与尊重"
+      ],
+      "plausible_interpretations": [
+        "有真风险",
+        "也在挑战权威"
+      ],
+      "clarifying_question": "你反对的是目标、方案，还是决策程序？",
+      "user_intent": "保护心理安全又维持秩序，会后深聊风险",
+      "poor_reply": "你算哪根葱，照做就行。",
+      "why_poor": "羞辱权威碾压",
+      "example_reply": "不同意见我听。请先说具体风险点两分钟；细节会后我们专项对齐。会上先定今天必须拍板的一项。",
+      "boundaries": "允许异议；禁止人身攻击",
+      "source_ids": [
+        "W1",
+        "W2",
+        "S5"
+      ],
+      "hints": [
+        "当场限时听风险",
+        "会后深聊",
+        "维持秩序不羞辱"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL21",
+      "relationship": "上下级",
+      "level": 3,
+      "user_role": "下级",
+      "topic": "性骚扰/不当玩笑",
+      "context": "合成示例：上级开了让你不适的身体/性别玩笑。",
+      "partner_utterance": "开个玩笑而已，你别那么敏感。",
+      "explicit_facts": [
+        "不当言论",
+        "否定你的不适",
+        "权力不对等"
+      ],
+      "plausible_interpretations": [
+        "试探边界",
+        "无意识歧视"
+      ],
+      "clarifying_question": "（可向HR等）——对上级可说：您是希望继续这个话题，还是我们可以回到工作？",
+      "user_intent": "清晰拒绝，留下记录意识，安全第一",
+      "poor_reply": "哈哈没事。（强装）",
+      "why_poor": "自我压缩且纵容",
+      "example_reply": "这样的玩笑让我不舒服，请停止。我们回到工作议程。",
+      "boundaries": "可求助HR/合规；不要求用户独自硬刚危险对象",
+      "source_ids": [
+        "S7",
+        "S8",
+        "W1"
+      ],
+      "hints": [
+        "清楚说停止",
+        "回到工作",
+        "必要时走正式渠道"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL22",
+      "relationship": "上下级",
+      "level": 3,
+      "user_role": "上级",
+      "topic": "裁员谈话",
+      "context": "合成示例：你需告知下属岗位取消。",
+      "partner_utterance": "我就知道会是我……我哪里做得不够？",
+      "explicit_facts": [
+        "组织决策裁撤",
+        "下属自责",
+        "需人道沟通"
+      ],
+      "plausible_interpretations": [
+        "要尊严与原因",
+        "要出路"
+      ],
+      "clarifying_question": "你更想先了解补偿与时间线，还是先听业务原因？",
+      "user_intent": "清晰、尊重、不甩锅到个人人格，给下一步资源",
+      "poor_reply": "别问了，上面决定的。",
+      "why_poor": "冰冷推脱",
+      "example_reply": "决定与组织调整有关，不是否定你整个人。时间线与补偿是……。我能帮你写推荐/对接内转的，我会做。你现在最想先弄清哪一块？",
+      "boundaries": "依法合规；不泄露不当信息",
+      "source_ids": [
+        "W1",
+        "S6",
+        "S8"
+      ],
+      "hints": [
+        "对人尊重对事清晰",
+        "说明资源支持",
+        "让对方选择先听哪块"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL23",
+      "relationship": "上下级",
+      "level": 3,
+      "user_role": "下级",
+      "topic": "离职面谈",
+      "context": "合成示例：你提出离职，上级挽留施压。",
+      "partner_utterance": "现在走对团队打击太大，你再考虑考虑。",
+      "explicit_facts": [
+        "已提离职",
+        "情感/责任施压"
+      ],
+      "plausible_interpretations": [
+        "真缺人",
+        "挽留惯性"
+      ],
+      "clarifying_question": "您是希望我延长交接，还是讨论留下的条件？",
+      "user_intent": "坚定决定或谈条件，不被纯愧疚绑架",
+      "poor_reply": "那我不管你们死活了。",
+      "why_poor": "撕破",
+      "example_reply": "决定已较明确。我可以做好交接，时间上我灵活两周。若谈留下，需要明确的角色与资源变化；否则请支持我有序离开。",
+      "boundaries": "合同与竞业另遵法",
+      "source_ids": [
+        "W1",
+        "S7",
+        "S8"
+      ],
+      "hints": [
+        "区分交接与挽留条件",
+        "不被纯愧疚绑架",
+        "给有序离开方案"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL24",
+      "relationship": "上下级",
+      "level": 3,
+      "user_role": "上级",
+      "topic": "举报传来",
+      "context": "合成示例：有人匿名举报你管理粗暴，你找核心下属了解。",
+      "partner_utterance": "我……不方便说。",
+      "explicit_facts": [
+        "存在举报",
+        "下属畏惧",
+        "需了解真相"
+      ],
+      "plausible_interpretations": [
+        "怕报复",
+        "确实有问题"
+      ],
+      "clarifying_question": "你是担心说了对你不利，还是觉得现有渠道不安全？",
+      "user_intent": "降低报复恐惧，开放具体行为反馈，不逼供",
+      "poor_reply": "是不是你举报的？",
+      "why_poor": "审讯压迫",
+      "example_reply": "你不方便说我尊重。我在查自己是否有让人不适的管理方式。你若愿意匿名写两点具体行为给我，或走HR，我都支持。不会因反馈穿小鞋。",
+      "boundaries": "正式调查交HR；不报复",
+      "source_ids": [
+        "W1",
+        "S7",
+        "S6"
+      ],
+      "hints": [
+        "降报复恐惧",
+        "要具体行为非逼供",
+        "给出安全渠道"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL25",
+      "relationship": "上下级",
+      "level": 3,
+      "user_role": "下级",
+      "topic": "目标相互矛盾",
+      "context": "合成示例：多位上级给矛盾指令。",
+      "partner_utterance": "别管他怎么说，你听我的。",
+      "explicit_facts": [
+        "指令冲突",
+        "要站队",
+        "执行风险"
+      ],
+      "plausible_interpretations": [
+        "权力斗争",
+        "信息不齐"
+      ],
+      "clarifying_question": "是否可以三方对齐一次优先级？",
+      "user_intent": "推动对齐，书面确认，避免夹心",
+      "poor_reply": "那我听谁的你们自己吵。",
+      "why_poor": "甩锅升级",
+      "example_reply": "两位要求目前冲突点在……。我建议15分钟对齐并邮件确认优先级；在此之前我按书面最新决议执行。",
+      "boundaries": "保留邮件痕迹",
+      "source_ids": [
+        "W1",
+        "W2",
+        "S3"
+      ],
+      "hints": [
+        "指出冲突点",
+        "推动三方对齐",
+        "按书面决议执行"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL26",
+      "relationship": "上下级",
+      "level": 3,
+      "user_role": "上级",
+      "topic": "业绩下滑质询",
+      "context": "合成示例：高层压力下，你向下属质询业绩。",
+      "partner_utterance": "数字难看不是我一个人造成的。",
+      "explicit_facts": [
+        "业绩差",
+        "下属防御",
+        "系统因素可能存在"
+      ],
+      "plausible_interpretations": [
+        "怕背锅",
+        "也有责任"
+      ],
+      "clarifying_question": "你认为可控因素里，哪两件本周能改？",
+      "user_intent": "分清可控/不可控，要行动不猎巫",
+      "poor_reply": "别找借口，不行就换人。",
+      "why_poor": "恐吓",
+      "example_reply": "系统因素我知道。我们先列可控的两件事和本周指标。我负责向上同步真实约束；你负责这两件的推进。我们周五只看进展。",
+      "boundaries": "长期不达标另循绩效流程",
+      "source_ids": [
+        "W1",
+        "S3",
+        "S5"
+      ],
+      "hints": [
+        "分可控不可控",
+        "要本周行动",
+        "你也承担向上同步"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "SL27",
+      "relationship": "上下级",
+      "level": 3,
+      "user_role": "下级",
+      "topic": "身体预警仍施压",
+      "context": "合成示例：你已说明身体亮红灯，上级仍施压。",
+      "partner_utterance": "关键时期大家都一样，再顶一周。",
+      "explicit_facts": [
+        "健康预警已告知",
+        "继续施压",
+        "过劳风险"
+      ],
+      "plausible_interpretations": [
+        "业务压力",
+        "忽视健康"
+      ],
+      "clarifying_question": "哪些产出若我远程/减负荷仍可保，哪些必须换人？",
+      "user_intent": "坚定健康边界，给业务备选，不道德自虐",
+      "poor_reply": "要命啊您！",
+      "why_poor": "只有情绪",
+      "example_reply": "健康亮红灯我不能再靠透支。我可保A与B；C请改期或转交。需要请假证明我可以提供。请支持这个安排。",
+      "boundaries": "健康优先；可走HR/医疗证明",
+      "source_ids": [
+        "S7",
+        "W1",
+        "S8"
+      ],
+      "hints": [
+        "坚定健康边界",
+        "给业务备选",
+        "必要时正式请假"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    }
+  ]
+}

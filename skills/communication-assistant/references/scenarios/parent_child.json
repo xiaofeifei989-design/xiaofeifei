@@ -1,0 +1,948 @@
+{
+  "version": "0.3",
+  "relationship": "亲子",
+  "note": "全部为原创虚构场景，不含私人真实对话。",
+  "count": 27,
+  "levels": {
+    "1": 9,
+    "2": 9,
+    "3": 9
+  },
+  "scenarios": [
+    {
+      "id": "PC01",
+      "relationship": "亲子",
+      "level": 1,
+      "topic": "想吃零食怕伤肠胃",
+      "context": "合成示例：饭前孩子吵着要冰淇淋/零食，家长担心伤肠胃拒绝。",
+      "partner_utterance": "我就要吃！就吃这个！",
+      "explicit_facts": [
+        "孩子强烈要求零食",
+        "饭前或刚吃撑不合适",
+        "家长打算拒绝"
+      ],
+      "plausible_interpretations": [
+        "很想要的当下欲望",
+        "也可能用哭闹争取",
+        "感受真实，行为需限制"
+      ],
+      "clarifying_question": "（对幼儿可改为命名）你是特别想吃这个甜的，对吗？",
+      "user_intent": "命名感受，守住不吃的底线，给可接受替代",
+      "poor_reply": "再哭也不给，再哭我打你了啊！",
+      "why_poor": "威胁羞辱，否认感受",
+      "example_reply": "你很想吃对不对？妈妈知道。可现在吃肚子会不舒服，现在不行。你可以选酸奶或等饭后再吃一小口，你选哪个？",
+      "boundaries": "不羞辱；不因哭闹立刻放弃所有规则；无医疗问题时不恐吓",
+      "source_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "hints": [
+        "蹲下/平视，命名“你很想要”",
+        "清楚说底线：现在不能吃",
+        "给一个可接受的替代选项"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC02",
+      "relationship": "亲子",
+      "level": 1,
+      "topic": "不想收玩具",
+      "context": "合成示例：客厅玩具一地，要出门，孩子不肯收。",
+      "partner_utterance": "我不要收！就要这样！",
+      "explicit_facts": [
+        "玩具未收拾",
+        "即将出门或有下一步安排",
+        "孩子拒绝"
+      ],
+      "plausible_interpretations": [
+        "不想中断玩耍",
+        "嫌麻烦",
+        "要掌控感"
+      ],
+      "clarifying_question": "你是还想再玩两分钟，还是讨厌收拾这件事？",
+      "user_intent": "描述问题给信息，邀请合作，保留限制",
+      "poor_reply": "你怎么这么懒，快点收！",
+      "why_poor": "贴懒标签，只命令",
+      "example_reply": "玩具还在地上，出门会绊到。妈妈先收车子，你收积木，我们一起比一比谁先放好。",
+      "boundaries": "不包办也不羞辱；可提供有限选择",
+      "source_ids": [
+        "P3",
+        "P4",
+        "P2"
+      ],
+      "hints": [
+        "描述看到的问题，少骂人",
+        "给短指令或分工",
+        "可用有限选择推进合作"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC03",
+      "relationship": "亲子",
+      "level": 1,
+      "topic": "不想刷牙",
+      "context": "合成示例：睡前孩子拒绝刷牙。",
+      "partner_utterance": "刷牙好难受，我不刷！",
+      "explicit_facts": [
+        "睡前护理时间",
+        "孩子拒绝刷牙",
+        "家长要推进"
+      ],
+      "plausible_interpretations": [
+        "口感不适",
+        "困了想抗争",
+        "拖延睡觉"
+      ],
+      "clarifying_question": "是牙膏味道不喜欢，还是你现在太困了？",
+      "user_intent": "接住不适，坚持刷牙底线，给选择降低对抗",
+      "poor_reply": "不刷以后牙都要坏光！",
+      "why_poor": "恐吓式说教",
+      "example_reply": "牙膏有点辣对不对？我们还是要刷。你选小刷头还是你自己数二十下？刷完我们读两页书。",
+      "boundaries": "健康底线不放弃；不恐吓拔牙",
+      "source_ids": [
+        "P1",
+        "P3",
+        "P2"
+      ],
+      "hints": [
+        "命名不适",
+        "守住必须刷的底线",
+        "用选择或后续小乐趣降低对抗"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC04",
+      "relationship": "亲子",
+      "level": 1,
+      "topic": "公园要玩具",
+      "context": "合成示例：商场/公园看到玩具，孩子哭着要买。",
+      "partner_utterance": "就买一个嘛，别人都有！",
+      "explicit_facts": [
+        "孩子要买玩具",
+        "家长预算或原则上不买",
+        "出现攀比话"
+      ],
+      "plausible_interpretations": [
+        "渴望拥有",
+        "攀比焦虑",
+        "测试边界"
+      ],
+      "clarifying_question": "你是真的特别喜欢这个，还是看到别人有才想要？",
+      "user_intent": "承认想要，说明今天不买的原因，可用愿望清单",
+      "poor_reply": "别人有关我们什么事，闭嘴！",
+      "why_poor": "粗暴否定",
+      "example_reply": "你很想要，我看见了。今天我们不买玩具。你可以把它记在愿望清单里，生日我们再看。现在我们去玩那个滑梯，好不好？",
+      "boundaries": "不因哭闹即时买买买也不羞辱",
+      "source_ids": [
+        "P2",
+        "P3",
+        "P1"
+      ],
+      "hints": [
+        "承认“你很想要”",
+        "清楚说今天不买",
+        "给替代：清单/去玩别的"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC05",
+      "relationship": "亲子",
+      "level": 1,
+      "topic": "幼儿园分离",
+      "context": "合成示例：送园时孩子抱腿哭闹不想进去。",
+      "partner_utterance": "不要走，我要妈妈陪！",
+      "explicit_facts": [
+        "分离焦虑表现",
+        "需要按时入园",
+        "家长要离开"
+      ],
+      "plausible_interpretations": [
+        "怕分离",
+        "需要可预期的回来",
+        "寻求多留一会儿"
+      ],
+      "clarifying_question": "你是希望妈妈多抱一会儿，还是想确认我什么时候来接？",
+      "user_intent": "命名难过，给清晰接回承诺，简短告别",
+      "poor_reply": "哭什么哭，这么娇气！",
+      "why_poor": "羞辱情绪",
+      "example_reply": "你不想妈妈走，有点难过对不对？妈妈下午四点来接，说到做到。我们再抱一下，然后你去找老师，妈妈走了。",
+      "boundaries": "不偷偷溜走成习惯；不因哭闹取消入园（特殊情况除外）",
+      "source_ids": [
+        "P1",
+        "P2",
+        "S6"
+      ],
+      "hints": [
+        "命名分离难过",
+        "给具体接回时间",
+        "简短坚定告别，不拖长"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC06",
+      "relationship": "亲子",
+      "level": 1,
+      "topic": "作业拖延",
+      "context": "合成示例：学龄孩子边玩边拖，作业还没开始。",
+      "partner_utterance": "等一下嘛，我玩完这局就写。",
+      "explicit_facts": [
+        "作业未完成",
+        "孩子在玩",
+        "时间在流逝"
+      ],
+      "plausible_interpretations": [
+        "任务启动困难",
+        "游戏成瘾拉力",
+        "未必故意对抗"
+      ],
+      "clarifying_question": "你是想先休息五分钟再写，还是现在先写最简单的那一页？",
+      "user_intent": "减少说教，设时间边界，帮启动第一步",
+      "poor_reply": "你再玩就别写了，爱怎样怎样！",
+      "why_poor": "放弃式威胁，不负责任",
+      "example_reply": "这局结束就停。我们先写一页，写完你可以休息五分钟。需要我陪你开个头吗？",
+      "boundaries": "不代写；不羞辱“笨蛋”",
+      "source_ids": [
+        "P3",
+        "P2",
+        "S8"
+      ],
+      "hints": [
+        "设清晰停止点",
+        "把任务拆成可启动的一小步",
+        "可陪伴开头但不代做"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC07",
+      "relationship": "亲子",
+      "level": 1,
+      "topic": "打翻杯子",
+      "context": "合成示例：孩子不小心打翻水杯，神情紧张。",
+      "partner_utterance": "不是故意的……你别凶我。",
+      "explicit_facts": [
+        "意外打翻",
+        "孩子害怕被骂",
+        "需要处理现场"
+      ],
+      "plausible_interpretations": [
+        "怕受罚",
+        "已内疚",
+        "需要一起善后"
+      ],
+      "clarifying_question": "你是担心我会骂你吗？",
+      "user_intent": "先降责，一起收拾，再讲以后怎么拿稳",
+      "poor_reply": "怎么搞的！天天闯祸！",
+      "why_poor": "人格攻击，吓阻诚实",
+      "example_reply": "好，不是故意的。我们先把地上擦干。下次杯子放桌子中间会稳一点，来，妈妈帮你拿抹布。",
+      "boundaries": "安全前提下允许试错",
+      "source_ids": [
+        "P1",
+        "P3",
+        "P4"
+      ],
+      "hints": [
+        "先降责：接受不是故意",
+        "一起善后",
+        "简短给一个可执行的注意点"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC08",
+      "relationship": "亲子",
+      "level": 1,
+      "topic": "分享玩具冲突",
+      "context": "合成示例：小朋友来家里玩，孩子不肯分享。",
+      "partner_utterance": "这是我的！他不能玩！",
+      "explicit_facts": [
+        "有同伴在场",
+        "孩子拒绝分享某玩具",
+        "主人权利与社交期待冲突"
+      ],
+      "plausible_interpretations": [
+        "物权感",
+        "怕被抢走",
+        "需要选择权"
+      ],
+      "clarifying_question": "你是想先自己玩这个，还是可以选一个给他玩？",
+      "user_intent": "尊重物权同时教社交，给有限选择",
+      "poor_reply": "这么小气，以后没人跟你玩！",
+      "why_poor": "羞辱威胁",
+      "example_reply": "这个是你的，你可以决定。你不想给这个的话，选另外一个给他玩，好不好？妈妈帮你一起说。",
+      "boundaries": "不强行夺走孩子心爱物；也不放任推打",
+      "source_ids": [
+        "P2",
+        "P3",
+        "P1"
+      ],
+      "hints": [
+        "承认“这是你的”",
+        "用有限选择教分享",
+        "禁止推打同时不羞辱"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC09",
+      "relationship": "亲子",
+      "level": 1,
+      "topic": "积极时刻画作",
+      "context": "合成示例：孩子举着刚画完的画求表扬。",
+      "partner_utterance": "你看我画的！好看吗？",
+      "explicit_facts": [
+        "孩子完成作品",
+        "征求肯定",
+        "正面氛围"
+      ],
+      "plausible_interpretations": [
+        "要被看见努力",
+        "要连接"
+      ],
+      "clarifying_question": "（可选）你最喜欢画里的哪一部分？",
+      "user_intent": "具体描述亮点，避免敷衍或否定",
+      "poor_reply": "随便画画有什么好夸的。",
+      "why_poor": "泼冷水",
+      "example_reply": "哇，你用了好多种颜色，太阳旁边还有小点点。你画的时候一定很认真。要不要讲给我听？",
+      "boundaries": "避免空洞“真棒”堆砌也可，但要具体",
+      "source_ids": [
+        "P3",
+        "P1",
+        "S6"
+      ],
+      "hints": [
+        "具体描述看到的细节",
+        "肯定过程/认真",
+        "邀请孩子讲一讲"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC10",
+      "relationship": "亲子",
+      "level": 2,
+      "topic": "同伴冲突要撑腰",
+      "context": "合成示例：孩子说被同学抢东西，要家长立刻去骂对方。",
+      "partner_utterance": "是他先抢的！你帮我去说他！",
+      "explicit_facts": [
+        "发生同伴冲突",
+        "孩子要家长出头",
+        "事实尚未多方核实"
+      ],
+      "plausible_interpretations": [
+        "要被保护",
+        "委屈",
+        "也可能只讲对自己有利的一面"
+      ],
+      "clarifying_question": "你是想先让我听完发生了什么，还是希望我明天去找老师一起说？",
+      "user_intent": "先共情与了解，不立刻站队开战，教表达与求助",
+      "poor_reply": "谁让你不去抢回来，真没出息。",
+      "why_poor": "二次伤害",
+      "example_reply": "听起来你很委屈。我先听你说清楚。我们不靠打回去解决。明天如果需要，我跟你一起找老师说，你也可以先练习怎么跟同学讲“请还给我”。",
+      "boundaries": "不教暴力报复；严重霸凌另案处理",
+      "source_ids": [
+        "P1",
+        "P2",
+        "S6"
+      ],
+      "hints": [
+        "先共情委屈",
+        "核实经过不立刻开战",
+        "教语言边界与成人协助渠道"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC11",
+      "relationship": "亲子",
+      "level": 2,
+      "topic": "考试失常",
+      "context": "合成示例：学龄/少年考试失利，自我否定。",
+      "partner_utterance": "反正我就是差，说了也没用。",
+      "explicit_facts": [
+        "成绩不理想",
+        "孩子自我贬低",
+        "可能回避讨论"
+      ],
+      "plausible_interpretations": [
+        "羞耻",
+        "怕被骂",
+        "无力感"
+      ],
+      "clarifying_question": "你是想先歇一歇，还是愿意跟我说说哪一科最挫败？",
+      "user_intent": "分开人与成绩，先接感受，再谈一小步",
+      "poor_reply": "早叫你复习你不听，现在知道了吧。",
+      "why_poor": "秋后算账",
+      "example_reply": "分数不理想，你一定挺难受。你不是“差”这个人。我们先不急着定计划；你准备好了，我们一起看哪一题最冤，好吗？",
+      "boundaries": "不否定事实成绩；不作人格定论",
+      "source_ids": [
+        "P1",
+        "P3",
+        "S6"
+      ],
+      "hints": [
+        "把“人”和“分数”分开",
+        "先接挫败感",
+        "再提议很小的复盘一步"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC12",
+      "relationship": "亲子",
+      "level": 2,
+      "topic": "屏幕时间到期",
+      "context": "合成示例：约定的游戏时间到了，孩子不肯停。",
+      "partner_utterance": "再让我玩一会儿！就五分钟！",
+      "explicit_facts": [
+        "事先有约定时间",
+        "时间已到",
+        "孩子讨价还价"
+      ],
+      "plausible_interpretations": [
+        "游戏沉浸难退出",
+        "试探能否破例"
+      ],
+      "clarifying_question": "你是想收个尾保存进度，还是其实想改成今天多玩？",
+      "user_intent": "守约定，给短暂收尾，不陷入无穷五分钟",
+      "poor_reply": "说过多少次了还要玩，没收平板！",
+      "why_poor": "只有惩罚没有过渡",
+      "example_reply": "时间到了，我们说好的。给你两分钟存档，然后平板交给我。明天的时间还在。",
+      "boundaries": "规则前后一致；极端对抗时确保安全",
+      "source_ids": [
+        "P2",
+        "P3",
+        "S7"
+      ],
+      "hints": [
+        "重申事先约定",
+        "给短收尾不无限延期",
+        "说明下次时间仍在"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC13",
+      "relationship": "亲子",
+      "level": 2,
+      "topic": "说谎掩饰",
+      "context": "合成示例：发现孩子对作业/打碎东西说了谎。",
+      "partner_utterance": "我没有啊……真的不是我。",
+      "explicit_facts": [
+        "有证据显示不实",
+        "孩子否认",
+        "需要谈诚实"
+      ],
+      "plausible_interpretations": [
+        "怕惩罚",
+        "羞愧",
+        "拖延承认"
+      ],
+      "clarifying_question": "你是担心承认了会很严重地被罚吗？",
+      "user_intent": "降低承认成本，谈诚实，处理后果要相称",
+      "poor_reply": "你就是骗子，以后谁信你！",
+      "why_poor": "人格盖章",
+      "example_reply": "我看到的和你说的对不上。承认一件难事需要勇气。你告诉我真实情况，我们一起想办法；撒谎会让事更难处理。",
+      "boundaries": "后果对事不对人；不体罚",
+      "source_ids": [
+        "P1",
+        "P3",
+        "S3"
+      ],
+      "hints": [
+        "指出不一致但不骂骗子",
+        "降低承认恐惧",
+        "对事设相称后果"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC14",
+      "relationship": "亲子",
+      "level": 2,
+      "topic": "当众纠正尴尬",
+      "context": "合成示例：亲戚面前孩子失礼，家长刚想纠正，孩子觉得丢脸。",
+      "partner_utterance": "你老是在别人面前说我！",
+      "explicit_facts": [
+        "公开场合被纠正",
+        "孩子感到羞辱",
+        "行为确实需调整"
+      ],
+      "plausible_interpretations": [
+        "要面子",
+        "反对当众被评"
+      ],
+      "clarifying_question": "你是希望我私下跟你说，而不是当着大家？",
+      "user_intent": "承认当众纠正的刺痛，改私下沟通，仍坚持行为期待",
+      "poor_reply": "我还不能说你了？没家教才丢人。",
+      "why_poor": "二次羞辱",
+      "example_reply": "当着大家说让你难堪了，这点我做得不好。规矩还是要的，我们回家私下说怎么改，好吗？",
+      "boundaries": "危险行为可立刻制止；态度问题尽量私下",
+      "source_ids": [
+        "P2",
+        "S7",
+        "P3"
+      ],
+      "hints": [
+        "认领当众纠正带来的难堪",
+        "坚持行为期待",
+        "改到私下谈"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC15",
+      "relationship": "亲子",
+      "level": 2,
+      "topic": "偏科与兴趣",
+      "context": "合成示例：孩子热爱画画，抵制某一主科。",
+      "partner_utterance": "我以后画画就行了，学那个有什么用？",
+      "explicit_facts": [
+        "孩子重兴趣轻某科",
+        "家长希望基础课达标",
+        "价值观摩擦"
+      ],
+      "plausible_interpretations": [
+        "兴趣真实",
+        "用极端话保护自主"
+      ],
+      "clarifying_question": "你是更想多一点画画时间，还是其实那科让你特别挫败？",
+      "user_intent": "尊重兴趣，说明底线科目要达标，谈可协商时间",
+      "poor_reply": "画画能当饭吃吗？幼稚！",
+      "why_poor": "贬低兴趣",
+      "example_reply": "我知道你爱画画，这很重要。学校那科还是要过基本线。我们能不能定：先完成那科作业，再加画画时间？",
+      "boundaries": "不否定艺术道路；也不放任放弃基础教育",
+      "source_ids": [
+        "P3",
+        "S2",
+        "S8"
+      ],
+      "hints": [
+        "肯定兴趣",
+        "说清底线科目",
+        "用时间交换协商"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC16",
+      "relationship": "亲子",
+      "level": 2,
+      "topic": "睡眠拖延",
+      "context": "合成示例：学龄儿童反复找借口不睡觉。",
+      "partner_utterance": "我睡不着，再陪我一会儿。",
+      "explicit_facts": [
+        "已过上床时间",
+        "反复拖延",
+        "要陪伴"
+      ],
+      "plausible_interpretations": [
+        "分离焦虑",
+        "白天刺激过多",
+        "习惯性拖延"
+      ],
+      "clarifying_question": "你是有点害怕自己待着，还是脑子还很兴奋？",
+      "user_intent": "有限陪伴+固定流程，不无限陪聊",
+      "poor_reply": "再闹明天别上学了！",
+      "why_poor": "空洞威胁",
+      "example_reply": "好，妈妈再陪五分钟拍背，然后灯要关了。你不是一个人，我就在隔壁。明天早上我们还会见面。",
+      "boundaries": "固定流程；特殊恐惧要认真对待",
+      "source_ids": [
+        "P1",
+        "P2",
+        "S7"
+      ],
+      "hints": [
+        "命名可能的害怕/兴奋",
+        "有限陪伴有终点",
+        "强调可预期的重聚"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC17",
+      "relationship": "亲子",
+      "level": 2,
+      "topic": "比较兄妹",
+      "context": "合成示例：孩子觉得家长更偏爱兄弟姐妹。",
+      "partner_utterance": "你就是偏心！什么都向着他/她。",
+      "explicit_facts": [
+        "孩子指控偏心",
+        "家有多个孩子",
+        "具体事件可能存在"
+      ],
+      "plausible_interpretations": [
+        "要公平被看见",
+        "放大偶发差异"
+      ],
+      "clarifying_question": "你是今天哪一件事觉得我不公平，还是一直都有这种感觉？",
+      "user_intent": "不辩“我最公平”，倾听具体事件，承认感受",
+      "poor_reply": "哪有偏心，你少无理取闹。",
+      "why_poor": "直接否定",
+      "example_reply": "你觉得我不公平，一定很难受。告诉我今天是哪一件。我不是要证明谁更乖，我想听听你的感觉。",
+      "boundaries": "不在孩子面前贬低另一个孩子",
+      "source_ids": [
+        "P1",
+        "S6",
+        "S3"
+      ],
+      "hints": [
+        "不急着证明自己公平",
+        "问具体事件",
+        "承认难受的感觉"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC18",
+      "relationship": "亲子",
+      "level": 2,
+      "topic": "老师告状后",
+      "context": "合成示例：老师反馈课堂讲话，孩子一回家就防御。",
+      "partner_utterance": "老师就看我不顺眼，你也要站她那边？",
+      "explicit_facts": [
+        "有老师反馈",
+        "孩子防御",
+        "家长尚未完整核实"
+      ],
+      "plausible_interpretations": [
+        "怕被罚",
+        "委屈",
+        "师生关系张力"
+      ],
+      "clarifying_question": "你是想先说说你那边发生了什么，还是怕我会狠狠骂你？",
+      "user_intent": "先听孩子版本，对事合作，不立刻联手打压",
+      "poor_reply": "老师会有错？一定是你问题！",
+      "why_poor": "未听先判",
+      "example_reply": "我先听你说。老师提到课堂讲话，我想了解当时情况。我们站在一起想办法，不是我跟老师联合起来对付你。",
+      "boundaries": "严重违纪不轻纵；先听不武断",
+      "source_ids": [
+        "P1",
+        "S6",
+        "P3"
+      ],
+      "hints": [
+        "先听孩子版本",
+        "表明“站在一起想办法”",
+        "对具体行为合作改进"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC19",
+      "relationship": "亲子",
+      "level": 3,
+      "topic": "青春期关门",
+      "context": "合成示例：青春期孩子吼着要关门，拒绝沟通。",
+      "partner_utterance": "你别管我！把门关上！",
+      "explicit_facts": [
+        "强烈要空间",
+        "语气冲",
+        "冲突一触即发"
+      ],
+      "plausible_interpretations": [
+        "要自主与隐私",
+        "情绪过载",
+        "未必憎恨父母"
+      ],
+      "clarifying_question": "你是想先自己待一会儿，还是有事但现在不想说？",
+      "user_intent": "尊重空间，留下可回入口，不砸门开战",
+      "poor_reply": "我是你爸/妈，我还不能进了？把门拆了！",
+      "why_poor": "权力碾压",
+      "example_reply": "好，我先不进。你需要空间。我在客厅，你准备好了可以出来，或者写一张纸条也行。我在乎你，不是来查岗。",
+      "boundaries": "安全例外（自伤风险）可破门；日常尊重隐私",
+      "source_ids": [
+        "P1",
+        "S7",
+        "S6"
+      ],
+      "hints": [
+        "尊重要空间",
+        "留下温和入口",
+        "说明在乎而非控制"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC20",
+      "relationship": "亲子",
+      "level": 3,
+      "topic": "早恋担忧",
+      "context": "合成示例：发现青少年与某人过从甚密，孩子反感被干涉。",
+      "partner_utterance": "我们只是朋友！你们管太宽了！",
+      "explicit_facts": [
+        "家长担忧亲密关系",
+        "孩子否认并要自主",
+        "信息不全"
+      ],
+      "plausible_interpretations": [
+        "要尊重与信任",
+        "害怕被禁止",
+        "可能有真感情"
+      ],
+      "clarifying_question": "你是希望我们少问细节，还是希望我们相信你会保护好自己？",
+      "user_intent": "谈安全与尊重，不羞辱，设必要边界",
+      "poor_reply": "不许来往，再找就断网！",
+      "why_poor": "控制升级，逼隐瞒",
+      "example_reply": "我不是要羞辱你。我关心你安全与心情。可以说说你们怎么相处，哪些我可以少问？底线是……（作息/安全），我们一起定。",
+      "boundaries": "不羞辱身体；关注强制/伤害风险",
+      "source_ids": [
+        "P1",
+        "S7",
+        "S8"
+      ],
+      "hints": [
+        "去掉羞辱语气",
+        "谈安全与尊重",
+        "协商可监督的底线而非全面禁止"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC21",
+      "relationship": "亲子",
+      "level": 3,
+      "topic": "厌学不想去",
+      "context": "合成示例：连续多天孩子说难受不想上学，排除急性病后仍反复。",
+      "partner_utterance": "学校太难受了，我就是不去！",
+      "explicit_facts": [
+        "反复拒学",
+        "可能有压力源",
+        "家长焦急"
+      ],
+      "plausible_interpretations": [
+        "焦虑/霸凌/学业挫败",
+        "用身体化表达"
+      ],
+      "clarifying_question": "学校里最难受的是人、课，还是别的什么？",
+      "user_intent": "认真探索原因，不简单骂懒，必要时专业求助",
+      "poor_reply": "不上学以后扫大街去！",
+      "why_poor": "恐吓贬低",
+      "example_reply": "听到你说学校让你难受，我认真当回事。我们先弄清最卡的是什么。今天可以先去半天/找老师聊聊；如果一直这样，我们一起找专业的人帮忙。",
+      "boundaries": "长期拒学需专业资源；不羞辱",
+      "source_ids": [
+        "P1",
+        "S6",
+        "S7"
+      ],
+      "hints": [
+        "当真话听，不骂懒",
+        "问具体压力源",
+        "给阶梯方案与专业选项"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC22",
+      "relationship": "亲子",
+      "level": 3,
+      "topic": "顶撞辱骂",
+      "context": "合成示例：冲突中孩子爆粗口骂家长。",
+      "partner_utterance": "我恨你们！你们烦不烦！",
+      "explicit_facts": [
+        "出现恨/辱骂表达",
+        "冲突升温",
+        "需边界"
+      ],
+      "plausible_interpretations": [
+        "情绪洪水",
+        "用极端词求距离",
+        "仍可能需要被接住"
+      ],
+      "clarifying_question": "你是气到想我离远点，还是有具体事觉得我不公平？",
+      "user_intent": "先降温设语言边界，稍后再谈内容，不对骂",
+      "poor_reply": "你骂我？我白养你了！",
+      "why_poor": "羞耻攻击",
+      "example_reply": "你很生气我听到了。可以用生气的话，但不能这样骂人。我先走开五分钟，我们都冷静一下再谈到底卡在哪。",
+      "boundaries": "禁止人身辱骂与动手；冷静后修复",
+      "source_ids": [
+        "P2",
+        "S5",
+        "S7"
+      ],
+      "hints": [
+        "允许生气不允许辱骂",
+        "先降温",
+        "稍后再谈具体不公平点"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC23",
+      "relationship": "亲子",
+      "level": 3,
+      "topic": "成年子女独立",
+      "context": "合成示例：成年子女抱怨父母插手工作/恋爱。",
+      "partner_utterance": "我自己的事自己会处理，你们别老插手。",
+      "explicit_facts": [
+        "子女已成年",
+        "父母频繁给意见",
+        "子女要边界"
+      ],
+      "plausible_interpretations": [
+        "要尊重与信任",
+        "怕被控制"
+      ],
+      "clarifying_question": "你是希望我们先问再建议，还是某些话题直接别提？",
+      "user_intent": "承认边界，改询问式关心，保留危急时的位置",
+      "poor_reply": "我是为你好，翅膀硬了是吧？",
+      "why_poor": "道德绑架",
+      "example_reply": "好，是我们管太多了。以后我先问“要不要听建议”。你不是小孩了，我信任你；真遇到想支持的时候，我在。",
+      "boundaries": "诈骗/安全危急可例外；日常尊重独立",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S6"
+      ],
+      "hints": [
+        "承认插手过多",
+        "改为先问再建议",
+        "表达信任与可求助"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC24",
+      "relationship": "亲子",
+      "level": 3,
+      "topic": "自伤暗示",
+      "context": "合成示例：青少年说“活着没意思”等危险表达。",
+      "partner_utterance": "活着好没意思，你们也不懂。",
+      "explicit_facts": [
+        "出现无意义/可能自伤暗示",
+        "需严肃对待"
+      ],
+      "plausible_interpretations": [
+        "抑郁或极度压力",
+        "求助信号",
+        "不是“矫情”"
+      ],
+      "clarifying_question": "你是已经想伤害自己，还是现在非常难受想有人懂？",
+      "user_intent": "认真对待，减少说教，推动专业与安全",
+      "poor_reply": "年纪轻轻想那么多，矫情！",
+      "why_poor": "致命轻视",
+      "example_reply": "这句话我很重视。你现在很难受，我不说教。你安全最重要。我们一起找能帮你的专业的人；你愿意告诉我有没有伤害自己的想法吗？",
+      "boundaries": "停止普通沟通技巧练习；引导紧急/专业援助；不独处冒险",
+      "source_ids": [
+        "S7",
+        "P1",
+        "S6"
+      ],
+      "hints": [
+        "当危机信号认真对待",
+        "不说教不否定",
+        "立刻导向安全与专业帮助"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC25",
+      "relationship": "亲子",
+      "level": 3,
+      "topic": "家务罢工式对抗",
+      "context": "合成示例：要求合理家务时，少年全面对抗。",
+      "partner_utterance": "凭什么我要干？又不是我弄乱的！",
+      "explicit_facts": [
+        "分配家务",
+        "孩子否认责任",
+        "权力斗争"
+      ],
+      "plausible_interpretations": [
+        "不公平感",
+        "要协商权",
+        "纯对抗"
+      ],
+      "clarifying_question": "你是觉得分工不公，还是讨厌被命令的方式？",
+      "user_intent": "谈公平与家庭贡献，给选择，避免权力战",
+      "poor_reply": "在这吃住就得听我的，爱干不干滚！",
+      "why_poor": "驱逐威胁",
+      "example_reply": "你觉得不公平，我们可以重新排。家庭运转需要大家出力。你选洗碗还是倒垃圾？方式我可以更商量，家务本身还是要做。",
+      "boundaries": "不使用遗弃威胁；分工可协商",
+      "source_ids": [
+        "P3",
+        "S7",
+        "S2"
+      ],
+      "hints": [
+        "区分不公与被命令感",
+        "给选择保留贡献期待",
+        "避免驱逐式威胁"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC26",
+      "relationship": "亲子",
+      "level": 3,
+      "topic": "成绩威胁亲情",
+      "context": "合成示例：孩子考差后说“你们只要分数不要我”。",
+      "partner_utterance": "你们根本不在乎我，只在乎分数。",
+      "explicit_facts": [
+        "成绩压力大",
+        "孩子质疑被爱",
+        "亲子联结受损"
+      ],
+      "plausible_interpretations": [
+        "长期感到条件式关爱",
+        "考试挫败投射"
+      ],
+      "clarifying_question": "你是最近哪一次觉得我只看分数，还是一直都有这种感觉？",
+      "user_intent": "明确无条件的关心，分开爱与期待，调整压力话术",
+      "poor_reply": "不看分数看什么？将来怎么办？",
+      "why_poor": "证实条件式关爱",
+      "example_reply": "我在乎你这个人，不是只在乎分数。是我最近谈成绩的方式让你感到不被爱了，对不起。成绩我们可以一起面对，你先告诉我你需要我怎么支持。",
+      "boundaries": "仍可谈责任但不绑爱",
+      "source_ids": [
+        "P1",
+        "S4",
+        "S6"
+      ],
+      "hints": [
+        "明确爱不等于分数",
+        "认领压力话术的伤害",
+        "问孩子需要怎样的支持"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "PC27",
+      "relationship": "亲子",
+      "level": 3,
+      "topic": "离婚/分居解释",
+      "context": "合成示例：家庭结构变化，孩子质问是不是自己的错。",
+      "partner_utterance": "是不是因为我不好，你们才不要一起了？",
+      "explicit_facts": [
+        "分居或离婚进程",
+        "孩子自责",
+        "需诚实又保护"
+      ],
+      "plausible_interpretations": [
+        "自责常见",
+        "要稳定保证"
+      ],
+      "clarifying_question": "你是担心以后少见到谁，还是觉得这是你的错？",
+      "user_intent": "明确不是孩子的错，给可预期的陪伴安排",
+      "poor_reply": "问这么多干嘛，大人的事你少管。",
+      "why_poor": "关闭对话，加深恐惧",
+      "example_reply": "不是因为你不好。这是我们大人之间的问题，不是你的错。你会继续被爱，我们会定好看你的时间。你有任何想法都可以问我。",
+      "boundaries": "不把对方父母抹黑；细节适龄",
+      "source_ids": [
+        "P1",
+        "S6",
+        "S7"
+      ],
+      "hints": [
+        "明确不是孩子的错",
+        "给可预期的见面/爱的保证",
+        "允许提问不抹黑另一方"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    }
+  ]
+}

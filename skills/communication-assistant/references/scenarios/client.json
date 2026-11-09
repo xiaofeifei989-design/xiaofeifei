@@ -1,0 +1,928 @@
+{
+  "version": "0.3",
+  "relationship": "客户",
+  "note": "全部为原创虚构场景，不含私人真实对话。",
+  "count": 27,
+  "levels": {
+    "1": 9,
+    "2": 9,
+    "3": 9
+  },
+  "scenarios": [
+    {
+      "id": "CL01",
+      "relationship": "客户",
+      "level": 1,
+      "topic": "交付延期抱怨",
+      "context": "合成示例：里程碑将延迟，客户来电不满。",
+      "partner_utterance": "你们又要晚？上次怎么说的？",
+      "explicit_facts": [
+        "再次延期风险",
+        "曾有承诺",
+        "客户不满"
+      ],
+      "plausible_interpretations": [
+        "要可信预期",
+        "信任受损"
+      ],
+      "clarifying_question": "您最关心的是新日期可不可靠，还是中间有没有可用的部分交付？",
+      "user_intent": "致歉具体失信点，给新日期与缓冲，说明已做动作",
+      "poor_reply": "我们也没办法，供应商的问题。",
+      "why_poor": "只甩锅无方案",
+      "example_reply": "这次又动日期，影响了您的计划，抱歉。新的可承诺日期是X（含缓冲）；本周先交付A模块。我每两天书面同步进度。",
+      "boundaries": "不承诺未核实日期",
+      "source_ids": [
+        "S3",
+        "S8",
+        "S7"
+      ],
+      "hints": [
+        "致歉对准失信点",
+        "给含缓冲的新日期",
+        "说明部分交付与同步频率"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL02",
+      "relationship": "客户",
+      "level": 1,
+      "topic": "小质量问题",
+      "context": "合成示例：交付有瑕疵但可修复。",
+      "partner_utterance": "这里和演示不一样，你们查一下。",
+      "explicit_facts": [
+        "指出差异",
+        "要处理",
+        "尚未升级"
+      ],
+      "plausible_interpretations": [
+        "要认真对待",
+        "未必要赔偿"
+      ],
+      "clarifying_question": "您希望先修功能，还是先要书面说明原因？",
+      "user_intent": "确认问题，给时限修复，不争辩演示差异口头化",
+      "poor_reply": "演示本来就是示意，别较真。",
+      "why_poor": "轻视",
+      "example_reply": "差异我们核实了，确属问题。今天提交修复计划，T日前给补丁。给您带来的核对成本抱歉。",
+      "boundaries": "不承认未核实的法律责任",
+      "source_ids": [
+        "S3",
+        "S8",
+        "S6"
+      ],
+      "hints": [
+        "确认问题",
+        "给修复时限",
+        "致歉具体影响"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL03",
+      "relationship": "客户",
+      "level": 1,
+      "topic": "询价比价",
+      "context": "合成示例：客户说别家更便宜。",
+      "partner_utterance": "别家更便宜，你们凭什么这个价？",
+      "explicit_facts": [
+        "价格异议",
+        "存在竞品",
+        "未丢单"
+      ],
+      "plausible_interpretations": [
+        "要价值证明",
+        "谈判策略"
+      ],
+      "clarifying_question": "您更看重总价，还是交付风险与售后？",
+      "user_intent": "讲清差异价值，不攻击竞品，给可选配置",
+      "poor_reply": "便宜没好货。",
+      "why_poor": "贬低式话术",
+      "example_reply": "理解您比价。我们价差主要在……。若预算优先，可用配置B降低费用；若要现方案的保障，我把对比项书面列给您。",
+      "boundaries": "不虚假贬损竞品",
+      "source_ids": [
+        "S3",
+        "S8",
+        "W1"
+      ],
+      "hints": [
+        "理解比价",
+        "讲可核价值差异",
+        "给降配选项"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL04",
+      "relationship": "客户",
+      "level": 1,
+      "topic": "需求小增加",
+      "context": "合成示例：客户随口要“顺便加一点”。",
+      "partner_utterance": "顺便把这个也加上吧，应该很快。",
+      "explicit_facts": [
+        "范围外请求",
+        "被说成很快",
+        "需管理预期"
+      ],
+      "plausible_interpretations": [
+        "真不知成本",
+        "试探免费"
+      ],
+      "clarifying_question": "这个要进本版本，还是可以排到下一期？",
+      "user_intent": "友好估影响，谈变更流程，不生硬拒绝也不空口答应",
+      "poor_reply": "不行，合同没写。",
+      "why_poor": "过硬无协作",
+      "example_reply": "理解需要。评估大约X人日，会影响原日期Y。走变更后可做；或放下一期不冲击当前里程碑。您倾向哪个？",
+      "boundaries": "重大变更需书面",
+      "source_ids": [
+        "S7",
+        "S3",
+        "S8"
+      ],
+      "hints": [
+        "估影响",
+        "给本版变更/下期选项",
+        "请客户选择"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL05",
+      "relationship": "客户",
+      "level": 1,
+      "topic": "表扬续约铺垫",
+      "context": "合成示例：客户对合作表示满意。",
+      "partner_utterance": "这次配合得不错，后面还想再聊聊合作。",
+      "explicit_facts": [
+        "正面反馈",
+        "有续约意向"
+      ],
+      "plausible_interpretations": [
+        "认可",
+        "也在开下一步"
+      ],
+      "clarifying_question": "您更想先复盘本次，还是直接看下一期范围？",
+      "user_intent": "承接肯定，推进具体下一步，不谄媚",
+      "poor_reply": "那多给点预算呗。",
+      "why_poor": "过早索取",
+      "example_reply": "谢谢认可。我整理本次成果与可延续项，本周约30分钟对齐下一期目标与时间。",
+      "boundaries": "不空口打折",
+      "source_ids": [
+        "S6",
+        "S8",
+        "S2"
+      ],
+      "hints": [
+        "承接肯定",
+        "约具体下一步",
+        "不谄媚索取"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL06",
+      "relationship": "客户",
+      "level": 1,
+      "topic": "信息不清晰",
+      "context": "合成示例：客户需求描述很散。",
+      "partner_utterance": "你们懂我意思就行，先做起来。",
+      "explicit_facts": [
+        "需求模糊",
+        "催开工",
+        "返工风险高"
+      ],
+      "plausible_interpretations": [
+        "自己也没想清",
+        "要速度"
+      ],
+      "clarifying_question": "我们先确认成功标准的三条，还是先做个低成本原型给您看？",
+      "user_intent": "用确认标准或原型降低误解，不假装懂",
+      "poor_reply": "您说清楚再找我们。",
+      "why_poor": "推球过硬",
+      "example_reply": "为避免做错，我先复述目标……请您确认。今天我们出一页成功标准，您点头后再排开发。",
+      "boundaries": "不盲目开工",
+      "source_ids": [
+        "S3",
+        "W1",
+        "S8"
+      ],
+      "hints": [
+        "复述确认",
+        "推动成功标准",
+        "可用低成本原型"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL07",
+      "relationship": "客户",
+      "level": 1,
+      "topic": "催回复",
+      "context": "合成示例：客户抱怨响应慢。",
+      "partner_utterance": "消息隔天才回，我们很着急。",
+      "explicit_facts": [
+        "响应慢",
+        "客户焦虑",
+        "可能有时差/流程"
+      ],
+      "plausible_interpretations": [
+        "要确定性",
+        "未必要立刻方案"
+      ],
+      "clarifying_question": "您更需要更快确认收到，还是更快给方案？",
+      "user_intent": "认领响应问题，设SLA，先回执",
+      "poor_reply": "我们也忙，别催。",
+      "why_poor": "对立",
+      "example_reply": "响应慢影响了您推进，抱歉。工作日X小时内先回执，方案类Y小时内给初步答复。刚才事项我现在确认……",
+      "boundaries": "SLA要可做到",
+      "source_ids": [
+        "S8",
+        "S6",
+        "S3"
+      ],
+      "hints": [
+        "致歉响应",
+        "设可做到的时限",
+        "立刻处理当前项"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL08",
+      "relationship": "客户",
+      "level": 1,
+      "topic": "培训不会用",
+      "context": "合成示例：客户说培训后仍不会用。",
+      "partner_utterance": "你们教完我们还是不会，这算交付吗？",
+      "explicit_facts": [
+        "培训效果差",
+        "客户质疑交付",
+        "需补救"
+      ],
+      "plausible_interpretations": [
+        "材料不当",
+        "场景未贴合"
+      ],
+      "clarifying_question": "卡在哪一步最多？需要操作手册还是再加一场实操？",
+      "user_intent": "不辩“教过了”，补具体赋能",
+      "poor_reply": "是你们没认真听。",
+      "why_poor": "指责客户",
+      "example_reply": "目标是你们能独立完成关键操作，目前没达到。我们补一场按你们场景的实操，并给一页速查。本周定时间。",
+      "boundaries": "无限培训需合同边界",
+      "source_ids": [
+        "S6",
+        "S2",
+        "S8"
+      ],
+      "hints": [
+        "认领效果未达",
+        "补实操与速查",
+        "约时间"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL09",
+      "relationship": "客户",
+      "level": 1,
+      "topic": "发票/流程催促",
+      "context": "合成示例：客户催发票或审批材料。",
+      "partner_utterance": "发票还不来，我们财务要关账了。",
+      "explicit_facts": [
+        "有时限",
+        "流程材料",
+        "客户财务节点"
+      ],
+      "plausible_interpretations": [
+        "真实节点压力"
+      ],
+      "clarifying_question": "最晚哪天必须入账？缺的是哪张附件？",
+      "user_intent": "确认截止，推进内部，给状态",
+      "poor_reply": "流程就这样，等着吧。",
+      "why_poor": "冷漠",
+      "example_reply": "理解关账节点。我今天把缺件补齐并提交，预计状态是……。有任何卡住我两点前给您电话。",
+      "boundaries": "不承诺财务无法做到的事",
+      "source_ids": [
+        "S3",
+        "S8",
+        "S6"
+      ],
+      "hints": [
+        "确认财务时限",
+        "给推进动作与时间",
+        "主动报卡点"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL10",
+      "relationship": "客户",
+      "level": 2,
+      "topic": "效果与演示差距",
+      "context": "合成示例：客户认为效果与销售演示差太远。",
+      "partner_utterance": "这个效果跟演示差太远了，谁负责？",
+      "explicit_facts": [
+        "期望落差",
+        "要问责",
+        "可能销售口径问题"
+      ],
+      "plausible_interpretations": [
+        "要补偿",
+        "要人解释"
+      ],
+      "clarifying_question": "您要的是达到演示同款，还是可接受分阶段接近？",
+      "user_intent": "承认落差，拆可交付差距，谈方案不先甩销售",
+      "poor_reply": "销售乱说不关我事。",
+      "why_poor": "对客户不负责",
+      "example_reply": "落差我们承认。演示含了X假设，现状缺Y。方案：补Y需工期Z；或调整成功标准为……。责任与补偿我们内部对齐后书面回复。",
+      "boundaries": "赔偿需授权",
+      "source_ids": [
+        "S3",
+        "W1",
+        "S7"
+      ],
+      "hints": [
+        "承认落差",
+        "拆假设与差距",
+        "方案+内部对齐补偿"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL11",
+      "relationship": "客户",
+      "level": 2,
+      "topic": "情绪激动要说法",
+      "context": "合成示例：客户激动要求今天必须给说法。",
+      "partner_utterance": "我不管过程，我只要结果，今天必须给说法！",
+      "explicit_facts": [
+        "情绪高",
+        "要当日说法",
+        "问题复杂"
+      ],
+      "plausible_interpretations": [
+        "失控感",
+        "要被重视"
+      ],
+      "clarifying_question": "今天需要的是原因说明、补救时间表，还是补偿意向？",
+      "user_intent": "稳定情绪，给当日可交的说法边界，不空头",
+      "poor_reply": "您先冷静点。",
+      "why_poor": "说教式降温",
+      "example_reply": "理解您要结果。今天17:00前我给书面：原因初判、临时补救、最终修复目标日。补偿需审核，今晚给流程说明。我保持电话畅通。",
+      "boundaries": "不承诺未批补偿",
+      "source_ids": [
+        "S5",
+        "S8",
+        "W1"
+      ],
+      "hints": [
+        "接住要被重视",
+        "给当日可交件",
+        "区分已定与待审"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL12",
+      "relationship": "客户",
+      "level": 2,
+      "topic": "范围蔓延加压",
+      "context": "合成示例：多次加需求且不认变更。",
+      "partner_utterance": "这些本来就该有，怎么还谈变更？",
+      "explicit_facts": [
+        "范围争议",
+        "客户不认变更",
+        "项目受压"
+      ],
+      "plausible_interpretations": [
+        "合同理解不同",
+        "争取免费"
+      ],
+      "clarifying_question": "我们按合同附录逐条过，还是先冻结本周范围保交付？",
+      "user_intent": "拉回书面范围，提议冻结与评审",
+      "poor_reply": "不付钱免谈。",
+      "why_poor": "过硬",
+      "example_reply": "理解您认为应包含。我们对照附录：列入的继续做；未列入的进变更清单，避免拖垮已承诺日期。您选先保日期还是先扩范围。",
+      "boundaries": "以书面为准",
+      "source_ids": [
+        "S7",
+        "S3",
+        "W1"
+      ],
+      "hints": [
+        "对照书面",
+        "变更清单化",
+        "请客户做日期/范围取舍"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL13",
+      "relationship": "客户",
+      "level": 2,
+      "topic": "付款拖延",
+      "context": "合成示例：客户拖延付款却催交付。",
+      "partner_utterance": "款稍后就付，你们别停啊。",
+      "explicit_facts": [
+        "应收未到",
+        "催交付",
+        "现金风险"
+      ],
+      "plausible_interpretations": [
+        "流程慢",
+        "故意占款"
+      ],
+      "clarifying_question": "付款卡在审批哪一步？我需要谁的接口人？",
+      "user_intent": "商务边界清晰，仍保持礼貌协作",
+      "poor_reply": "不给钱就不干。",
+      "why_poor": "过冲",
+      "example_reply": "交付我们重视。按约定节点，付款到账后启动下一阶段。请您给审批接口人，我协助催办；到账当日立即复工。",
+      "boundaries": "遵合同；重大决策请示",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S3"
+      ],
+      "hints": [
+        "礼貌持边界",
+        "协助催审批",
+        "到账即复工"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL14",
+      "relationship": "客户",
+      "level": 2,
+      "topic": "多接口人矛盾指令",
+      "context": "合成示例：客户方多人指令冲突。",
+      "partner_utterance": "按我说的做，别听他们的。",
+      "explicit_facts": [
+        "多头指令",
+        "要站队",
+        "风险高"
+      ],
+      "plausible_interpretations": [
+        "内部权力",
+        "信息不齐"
+      ],
+      "clarifying_question": "谁是本项目书面决策人？能否邮件确认？",
+      "user_intent": "要单一决策源，书面确认",
+      "poor_reply": "那你们先吵完再说。",
+      "why_poor": "甩锅",
+      "example_reply": "为防做错，请贵方指定书面决策人并邮件确认优先级。在此之前我按上份盖章需求执行，并抄送相关方。",
+      "boundaries": "留痕",
+      "source_ids": [
+        "W1",
+        "S3",
+        "S7"
+      ],
+      "hints": [
+        "要单一决策人",
+        "邮件确认",
+        "暂按书面执行"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL15",
+      "relationship": "客户",
+      "level": 2,
+      "topic": "安全/合规质疑",
+      "context": "合成示例：客户质疑数据安全。",
+      "partner_utterance": "我们数据会不会被乱用？你们怎么证明？",
+      "explicit_facts": [
+        "安全关切",
+        "要证明",
+        "信任敏感"
+      ],
+      "plausible_interpretations": [
+        "合规要求",
+        "被过往厂商伤过"
+      ],
+      "clarifying_question": "您需要证书、架构说明，还是现场审计？",
+      "user_intent": "严肃回应，给可核材料，不空口保证绝对安全",
+      "poor_reply": "放心吧绝对没问题。",
+      "why_poor": "空头保证",
+      "example_reply": "关切合理。我们提供：权限模型说明、现有认证、数据处理位置。做不到的我会标明。需要的话安排技术对接。",
+      "boundaries": "不虚假宣称认证",
+      "source_ids": [
+        "S3",
+        "S8",
+        "S7"
+      ],
+      "hints": [
+        "严肃对待",
+        "给可核材料",
+        "标明做不到的"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL16",
+      "relationship": "客户",
+      "level": 2,
+      "topic": "竞品挖墙脚现场",
+      "context": "合成示例：谈判中客户当场提到已接触竞品。",
+      "partner_utterance": "他们能更早交付，你们还能怎样？",
+      "explicit_facts": [
+        "竞品压力",
+        "要加码",
+        "未丢单"
+      ],
+      "plausible_interpretations": [
+        "谈判",
+        "真有替代"
+      ],
+      "clarifying_question": "更早交付和更低风险您更看重哪个？",
+      "user_intent": "不恐慌降价乱承诺，比条件",
+      "poor_reply": "那你去找他们啊。",
+      "why_poor": "赌气",
+      "example_reply": "理解您在比较。我们能承诺的最早日期是X，含风险缓冲；若您更看早，可砍范围保日期。我书面列三项对比供您决策。",
+      "boundaries": "不诋毁竞品",
+      "source_ids": [
+        "W1",
+        "S8",
+        "S3"
+      ],
+      "hints": [
+        "不赌气",
+        "用范围/日期选项",
+        "书面对比"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL17",
+      "relationship": "客户",
+      "level": 2,
+      "topic": "使用培训中的抱怨",
+      "context": "合成示例：上线初期用户抱怨难用。",
+      "partner_utterance": "系统这么难用，你们上线前想过我们吗？",
+      "explicit_facts": [
+        "可用性质疑",
+        "情绪化",
+        "需响应"
+      ],
+      "plausible_interpretations": [
+        "要被看见痛点",
+        "要改进计划"
+      ],
+      "clarifying_question": "最痛的三步是什么？影响的是效率还是正确性？",
+      "user_intent": "收集痛点，给改进与临时辅助",
+      "poor_reply": "新系统都有适应期。",
+      "why_poor": "敷衍",
+      "example_reply": "难用点请您指出，我们当正式问题。今天先派人驻场/远程辅助关键流程；本周出改进排序。谢谢您具体反馈。",
+      "boundaries": "改进排期诚实",
+      "source_ids": [
+        "S6",
+        "S2",
+        "S8"
+      ],
+      "hints": [
+        "当正式问题",
+        "临时辅助+改进排序",
+        "感谢具体反馈"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL18",
+      "relationship": "客户",
+      "level": 2,
+      "topic": "合同条款拉扯",
+      "context": "合成示例：法务对免责条款争执。",
+      "partner_utterance": "这条款太单边了，不改别想签。",
+      "explicit_facts": [
+        "条款争议",
+        "签约卡点",
+        "需协商"
+      ],
+      "plausible_interpretations": [
+        "风险分配",
+        "谈判姿态"
+      ],
+      "clarifying_question": "您最不能接受的是哪一条？有没有可接受的改写？",
+      "user_intent": "弄清红线，带回路内部，不擅自改约",
+      "poor_reply": "我们合同都这样，爱签不签。",
+      "why_poor": "傲慢",
+      "example_reply": "理解风险关切。请标出必须改的条款与您的改写建议，我今天带回路法务；哪些可调哪些难动，明天书面回复。",
+      "boundaries": "无授权不改合同",
+      "source_ids": [
+        "S7",
+        "S8",
+        "W1"
+      ],
+      "hints": [
+        "请标红线与改写",
+        "带回法务",
+        "约书面回复"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL19",
+      "relationship": "客户",
+      "level": 3,
+      "topic": "公开投诉威胁",
+      "context": "合成示例：客户威胁曝光/投诉媒体或监管。",
+      "partner_utterance": "你们再这样，我就去曝光。",
+      "explicit_facts": [
+        "公开施压",
+        "关系破裂边缘",
+        "需危机应对"
+      ],
+      "plausible_interpretations": [
+        "要被重视",
+        "也可能已决定升级"
+      ],
+      "clarifying_question": "您希望我们在多久前给出可执行补救，还是已决定走公开渠道？",
+      "user_intent": "冷静、负责、给补救时间表，不威胁反制",
+      "poor_reply": "你去吧，我们不怕。",
+      "why_poor": "挑衅",
+      "example_reply": "理解您非常不满。曝光权在您。我们仍希望先补救：今天给根因初报与补救时间表，指定负责人对接。请给我们这个窗口。",
+      "boundaries": "法务/公关介入；不恐吓客户",
+      "source_ids": [
+        "S5",
+        "W1",
+        "S8"
+      ],
+      "hints": [
+        "不挑衅",
+        "给窗口与负责人",
+        "启动内部危机流程"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL20",
+      "relationship": "客户",
+      "level": 3,
+      "topic": "事故致损索赔",
+      "context": "合成示例：故障导致客户业务损失，提出索赔。",
+      "partner_utterance": "这次损失你们必须赔，数字我们核算了。",
+      "explicit_facts": [
+        "有损主张",
+        "数字待核",
+        "责任待认"
+      ],
+      "plausible_interpretations": [
+        "要补偿",
+        "要态度"
+      ],
+      "clarifying_question": "您更希望先看到责任认定与补救，还是先谈赔偿数字？",
+      "user_intent": "认真受理，不擅自承认全责金额，推动核查",
+      "poor_reply": "损失跟我们无关。",
+      "why_poor": "推脱刺激",
+      "example_reply": "损失主张我们认真对待。请提供核算依据与时间线，我们同步技术与法务核查。同时先做止血措施……。金额需核查后答复，不是回避。",
+      "boundaries": "授权前不承诺赔付数字",
+      "source_ids": [
+        "S3",
+        "S7",
+        "W1"
+      ],
+      "hints": [
+        "认真受理",
+        "要依据并止血",
+        "金额须核查"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL21",
+      "relationship": "客户",
+      "level": 3,
+      "topic": "个人攻击对接人",
+      "context": "合成示例：客户对一线对接人辱骂。",
+      "partner_utterance": "你们这人什么素质，是不是故意整我？",
+      "explicit_facts": [
+        "人身攻击",
+        "冲突升级",
+        "需保护员工与客户关系"
+      ],
+      "plausible_interpretations": [
+        "怒火投射",
+        "也可能有服务失误"
+      ],
+      "clarifying_question": "具体哪次服务没达到您预期？我们先对事。",
+      "user_intent": "拉回对事，设沟通边界，必要时换对接",
+      "poor_reply": "您骂人我们免谈。",
+      "why_poor": "易封死（可有边界但需有路径）",
+      "example_reply": "若服务有失误我们纠正。请对事沟通，人身攻击我们无法继续电话。可以换负责人或转书面；目标仍是解决问题。",
+      "boundaries": "保护员工；可终止辱骂通话",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S5"
+      ],
+      "hints": [
+        "对事",
+        "设反辱骂边界",
+        "给换人或书面路径"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL22",
+      "relationship": "客户",
+      "level": 3,
+      "topic": "关键系统长时间中断",
+      "context": "合成示例：生产故障持续，客户高层进群。",
+      "partner_utterance": "现在到底能不能好？我要确切时间！",
+      "explicit_facts": [
+        "故障持续",
+        "高层施压",
+        "时间不确定"
+      ],
+      "plausible_interpretations": [
+        "要控制感",
+        "要诚实"
+      ],
+      "clarifying_question": "您需要的是下一通报时间，还是当前最可能修复窗口？",
+      "user_intent": "诚实不确定+通报节奏+已做动作，不编造确切分钟",
+      "poor_reply": "应该快了。",
+      "why_poor": "含糊害人",
+      "example_reply": "确切分钟我现在无法保证。已做：……；下一步：……。每30分钟书面通报，窗口收敛会立刻更新。假时间我不会报。",
+      "boundaries": "不编造ETA",
+      "source_ids": [
+        "W1",
+        "S3",
+        "S8"
+      ],
+      "hints": [
+        "诚实不确定",
+        "固定通报节奏",
+        "列已做与下一步"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL23",
+      "relationship": "客户",
+      "level": 3,
+      "topic": "回扣暗示",
+      "context": "合成示例：客户方个人暗示好处费。",
+      "partner_utterance": "这件事成了大家也好，你懂的。",
+      "explicit_facts": [
+        "疑似不当利益暗示",
+        "合规风险"
+      ],
+      "plausible_interpretations": [
+        "索贿",
+        "暧昧试探"
+      ],
+      "clarifying_question": "您指的是项目正当激励方案，还是其他？",
+      "user_intent": "清晰合规拒绝，保留合作可能",
+      "poor_reply": "多少？弄清楚再说。",
+      "why_poor": "进入违规",
+      "example_reply": "合作我们走合同与对公。个人回扣/好处我们不能涉及。正当折扣与方案可以谈，请走正式渠道。",
+      "boundaries": "合规一票否决；可上报",
+      "source_ids": [
+        "S7",
+        "S8",
+        "W1"
+      ],
+      "hints": [
+        "明确合规拒绝",
+        "导向对公",
+        "不暧昧"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL24",
+      "relationship": "客户",
+      "level": 3,
+      "topic": "终止合作威胁与挽留",
+      "context": "合成示例：客户提出终止，同时你方可挽留。",
+      "partner_utterance": "我们准备换供应商了。",
+      "explicit_facts": [
+        "终止意向",
+        "可能仍可挽回",
+        "需尊严沟通"
+      ],
+      "plausible_interpretations": [
+        "已决定",
+        "谈判最后筹码"
+      ],
+      "clarifying_question": "是已经决定，还是愿意看一份挽留方案？",
+      "user_intent": "尊重选择，争取窗口，给具体改进",
+      "poor_reply": "走了别后悔。",
+      "why_poor": "赌气",
+      "example_reply": "尊重您的选择权。若还差一次机会，我24小时内给改进与补偿选项；若已决定，我们配合交接，减少您的切换成本。",
+      "boundaries": "不低价自伤乱承诺",
+      "source_ids": [
+        "S6",
+        "W1",
+        "S8"
+      ],
+      "hints": [
+        "尊重选择",
+        "争取有时限窗口",
+        "配合交接"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL25",
+      "relationship": "客户",
+      "level": 3,
+      "topic": "数据泄露疑云",
+      "context": "合成示例：客户怀疑发生泄露。",
+      "partner_utterance": "我们怀疑数据外泄了，你们必须说清楚！",
+      "explicit_facts": [
+        "严重指控",
+        "事实未定",
+        "要透明度"
+      ],
+      "plausible_interpretations": [
+        "恐惧",
+        "监管压力"
+      ],
+      "clarifying_question": "您目前掌握的异常信号是什么？是否已报案/通报？",
+      "user_intent": "严肃启动核查，不否认不慌乱认全责",
+      "poor_reply": "绝不可能。",
+      "why_poor": "武断",
+      "example_reply": "指控我们当最高优先级。请同步异常线索；我们立即启动安全核查并指定对接人，按节点书面通报。结论以核查为准，不预下定论。",
+      "boundaries": "法务/安全主导对外口径",
+      "source_ids": [
+        "S3",
+        "W1",
+        "S7"
+      ],
+      "hints": [
+        "最高优先级",
+        "要线索+启动核查",
+        "不预下定论"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL26",
+      "relationship": "客户",
+      "level": 3,
+      "topic": "招标不公质疑",
+      "context": "合成示例：落标客户质疑程序。",
+      "partner_utterance": "你们是不是内定？我们要说法。",
+      "explicit_facts": [
+        "程序质疑",
+        "情绪强",
+        "可能公开化"
+      ],
+      "plausible_interpretations": [
+        "要公正说明",
+        "失落"
+      ],
+      "clarifying_question": "您希望得到评分说明，还是复议路径？",
+      "user_intent": "程序透明回应，不嘲讽失败者",
+      "poor_reply": "弱就认了。",
+      "why_poor": "羞辱",
+      "example_reply": "理解您要公正。我们按规则提供可公开的评分说明与复议渠道。内定不符合我们的程序，具体由招标负责人对接。",
+      "boundaries": "遵招标法规",
+      "source_ids": [
+        "S8",
+        "S3",
+        "S7"
+      ],
+      "hints": [
+        "给说明与复议",
+        "不羞辱",
+        "指定负责人"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "CL27",
+      "relationship": "客户",
+      "level": 3,
+      "topic": "长期欠费又求紧急支持",
+      "context": "合成示例：长期欠费客户突发故障求援。",
+      "partner_utterance": "先救命，钱的事以后再说！",
+      "explicit_facts": [
+        "欠费",
+        "紧急故障",
+        "人道与商务张力"
+      ],
+      "plausible_interpretations": [
+        "真紧急",
+        "惯用拖延"
+      ],
+      "clarifying_question": "紧急恢复需要的最小动作是什么？付款计划能否今天书面确认？",
+      "user_intent": "可做人道路径但绑定书面付款，请示授权",
+      "poor_reply": "欠费免谈。",
+      "why_poor": "一刀切可能不合理",
+      "example_reply": "人身/业务安全优先的部分我们评估做最小恢复。同时请今天书面确认还款计划，否则只能维持最小应急。我马上请示并回复确切范围。",
+      "boundaries": "授权；安全例外",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S5"
+      ],
+      "hints": [
+        "最小应急",
+        "绑定书面还款",
+        "请示授权"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    }
+  ]
+}

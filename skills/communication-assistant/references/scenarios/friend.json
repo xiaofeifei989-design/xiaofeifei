@@ -1,0 +1,911 @@
+{
+  "version": "0.3",
+  "relationship": "好友",
+  "note": "全部为原创虚构场景，不含私人真实对话。",
+  "count": 27,
+  "levels": {
+    "1": 9,
+    "2": 9,
+    "3": 9
+  },
+  "scenarios": [
+    {
+      "id": "FR01",
+      "relationship": "好友",
+      "level": 1,
+      "topic": "倾诉失恋",
+      "context": "合成示例：好友失恋后自我否定。",
+      "partner_utterance": "我是不是特别失败，谁都留不住。",
+      "explicit_facts": [
+        "刚经历分手",
+        "自我贬低",
+        "来找你"
+      ],
+      "plausible_interpretations": [
+        "要被接住",
+        "未必要立刻建议"
+      ],
+      "clarifying_question": "你是想先吐槽，还是想听听我怎么看？",
+      "user_intent": "先陪，分开人与关系结果，问要不要建议",
+      "poor_reply": "早看那人不行，叫你分你不听。",
+      "why_poor": "事后诸葛亮",
+      "example_reply": "分手很痛，不等于你失败。我在，你想说多久都行。要是想听想法你再说，我先陪你。",
+      "boundaries": "不贬低前任过分煽风",
+      "source_ids": [
+        "S6",
+        "S1",
+        "S2"
+      ],
+      "hints": [
+        "先陪不说教",
+        "人与结果分开",
+        "问要不要建议"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR02",
+      "relationship": "好友",
+      "level": 1,
+      "topic": "约会迟到",
+      "context": "合成示例：你迟到，朋友等了很久。",
+      "partner_utterance": "你又迟到！我都等半小时了。",
+      "explicit_facts": [
+        "迟到事实",
+        "对方等待",
+        "重复发生可能"
+      ],
+      "plausible_interpretations": [
+        "不被尊重感"
+      ],
+      "clarifying_question": "你是更生气这次等太久，还是觉得我总这样？",
+      "user_intent": "认领，具体弥补，改下次",
+      "poor_reply": "路上堵车你又不是不知道。",
+      "why_poor": "借口优先",
+      "example_reply": "让你空等半小时，抱歉。今天我请，下次我提前出发/提早到。",
+      "boundaries": "不空承诺永不迟到",
+      "source_ids": [
+        "S4",
+        "S6",
+        "S2"
+      ],
+      "hints": [
+        "先认领",
+        "具体弥补",
+        "说下次怎么改"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR03",
+      "relationship": "好友",
+      "level": 1,
+      "topic": "好消息分享",
+      "context": "合成示例：朋友拿到 offer 第一时间告诉你。",
+      "partner_utterance": "我拿到心仪的 offer 了！第一时间告诉你！",
+      "explicit_facts": [
+        "正面分享",
+        "要庆祝"
+      ],
+      "plausible_interpretations": [
+        "要被看见"
+      ],
+      "clarifying_question": "最开心的是薪资、团队，还是终于尘埃落定？",
+      "user_intent": "热情具体祝贺，不转移自己",
+      "poor_reply": "还行吧，我以前拿过更好的。",
+      "why_poor": "抢镜贬低",
+      "example_reply": "太好了！看你为目标准备那么久，值了。晚上我请你吃顿好的庆祝！",
+      "boundaries": "真诚",
+      "source_ids": [
+        "S6",
+        "S1",
+        "S4"
+      ],
+      "hints": [
+        "热情具体",
+        "点出她的付出",
+        "邀庆祝"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR04",
+      "relationship": "好友",
+      "level": 1,
+      "topic": "朋友圈已读不回误解",
+      "context": "合成示例：朋友觉得你故意不理。",
+      "partner_utterance": "你是不是故意不回我？看见了也不理。",
+      "explicit_facts": [
+        "回复延迟",
+        "对方解读为故意"
+      ],
+      "plausible_interpretations": [
+        "不安",
+        "要解释"
+      ],
+      "clarifying_question": "你是这次特着急，还是最近都觉得我冷淡？",
+      "user_intent": "澄清非故意，给以后信号",
+      "poor_reply": "至于吗，矫情。",
+      "why_poor": "羞辱敏感",
+      "example_reply": "不是故意的，刚才在忙没回成。让你以为被晾了抱歉。急的事你可以标“急”，我优先回。",
+      "boundaries": "不承诺秒回",
+      "source_ids": [
+        "S6",
+        "S3",
+        "S2"
+      ],
+      "hints": [
+        "澄清非故意",
+        "致歉感受",
+        "给紧急信号约定"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR05",
+      "relationship": "好友",
+      "level": 1,
+      "topic": "临时取消约定",
+      "context": "合成示例：朋友临时取消见面。",
+      "partner_utterance": "今晚去不了了，下次补。",
+      "explicit_facts": [
+        "临时取消",
+        "你可能已出发准备"
+      ],
+      "plausible_interpretations": [
+        "有事",
+        "也可能习惯放鸽子"
+      ],
+      "clarifying_question": "你是突发情况，还是今天状态不好？",
+      "user_intent": "表达感受与边界，仍留余地",
+      "poor_reply": "那就别约了。",
+      "why_poor": "一刀切",
+      "example_reply": "好，你先处理。我已经出门了有点可惜。下次能不能提前一点说？你方便时我们再定。",
+      "boundaries": "多次放鸽子可升级谈",
+      "source_ids": [
+        "S8",
+        "S4",
+        "S6"
+      ],
+      "hints": [
+        "承认可惜",
+        "提提前告知",
+        "仍留再约"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR06",
+      "relationship": "好友",
+      "level": 1,
+      "topic": "借日常小物",
+      "context": "合成示例：朋友频繁借小东西不还。",
+      "partner_utterance": "你那充电器再借我用用嘛。",
+      "explicit_facts": [
+        "频繁借用",
+        "可能未还"
+      ],
+      "plausible_interpretations": [
+        "图方便",
+        "未觉边界"
+      ],
+      "clarifying_question": "你是今天急用，还是想干脆买一个？",
+      "user_intent": "友善设边界，可帮一次并促归还/自备",
+      "poor_reply": "你怎么这么烦。",
+      "why_poor": "伤人",
+      "example_reply": "今天可以，请晚上前还我。你常用的话建议自备一个，我也可以链你同款。",
+      "boundaries": "贵重物品可拒",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S2"
+      ],
+      "hints": [
+        "可帮一次",
+        "明确归还",
+        "促自备"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR07",
+      "relationship": "好友",
+      "level": 1,
+      "topic": "心情低落陪聊",
+      "context": "合成示例：朋友说今天特别丧。",
+      "partner_utterance": "不想说话，但又不想一个人。",
+      "explicit_facts": [
+        "矛盾需求",
+        "低落",
+        "要陪伴"
+      ],
+      "plausible_interpretations": [
+        "要安静陪伴"
+      ],
+      "clarifying_question": "要我语音挂着不说话，还是陪你出去走走？",
+      "user_intent": "提供低压力陪伴选项",
+      "poor_reply": "那你想怎样嘛，说清楚。",
+      "why_poor": "增加负担",
+      "example_reply": "我在。我们可以视频挂着，你不必说话；想讲了随时讲。",
+      "boundaries": "自伤信号另处理",
+      "source_ids": [
+        "S6",
+        "S1",
+        "S2"
+      ],
+      "hints": [
+        "低压力陪伴",
+        "给选项",
+        "不逼说清楚"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR08",
+      "relationship": "好友",
+      "level": 1,
+      "topic": "口味分歧聚餐",
+      "context": "合成示例：选餐厅争执。",
+      "partner_utterance": "每次都听你的，我的口味呢？",
+      "explicit_facts": [
+        "决策不均感",
+        "聚餐选择"
+      ],
+      "plausible_interpretations": [
+        "要被照顾"
+      ],
+      "clarifying_question": "你今天特别想吃哪类？",
+      "user_intent": "认领偏向，把选择权交回",
+      "poor_reply": "你不说我怎么知道。",
+      "why_poor": "推责",
+      "example_reply": "是我选多了。今天你定，我跟着；有忌口提前跟我说。",
+      "boundaries": "过敏等健康例外",
+      "source_ids": [
+        "S4",
+        "S6",
+        "S2"
+      ],
+      "hints": [
+        "认领偏向",
+        "交还选择权",
+        "邀说忌口"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR09",
+      "relationship": "好友",
+      "level": 1,
+      "topic": "回城通知",
+      "context": "合成示例：外地好友回城约见。",
+      "partner_utterance": "我回来啦！你有空吗？",
+      "explicit_facts": [
+        "好友回城",
+        "邀约",
+        "你可能忙"
+      ],
+      "plausible_interpretations": [
+        "珍惜见面"
+      ],
+      "clarifying_question": "你待几天？想吃饭还是随便逛？",
+      "user_intent": "表达想见，给真实档期",
+      "poor_reply": "再说吧很忙。",
+      "why_poor": "冷淡",
+      "example_reply": "太好了你回来！我周三晚和周六白天有空，你选一个，我想见你。",
+      "boundaries": "诚实档期",
+      "source_ids": [
+        "S6",
+        "S2",
+        "S4"
+      ],
+      "hints": [
+        "表达想见",
+        "给具体档期",
+        "让对方选"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR10",
+      "relationship": "好友",
+      "level": 2,
+      "topic": "借钱两难",
+      "context": "合成示例：朋友开口借钱周转。",
+      "partner_utterance": "能不能先借我一点周转，下月还你。",
+      "explicit_facts": [
+        "借钱请求",
+        "关系压力",
+        "金额未定"
+      ],
+      "plausible_interpretations": [
+        "真困难",
+        "也可能习惯"
+      ],
+      "clarifying_question": "大概需要多少？下月哪天能还？",
+      "user_intent": "可借则规则清晰；不借则温柔坚定，不羞辱",
+      "poor_reply": "钱伤感情，免谈。",
+      "why_poor": "过硬无温度（可有边界但需柔）",
+      "example_reply": "你开口我知道不容易。我能支援的额度是X，请写清还款日；超了这个数我帮不上现金，但可以一起想别的办法。",
+      "boundaries": "不借不要编借口羞辱；量力",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S2"
+      ],
+      "hints": [
+        "温度+规则",
+        "额度与还款日",
+        "不羞辱"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR11",
+      "relationship": "好友",
+      "level": 2,
+      "topic": "人生比较",
+      "context": "合成示例：朋友因你过得好而自卑。",
+      "partner_utterance": "看你们都这么顺利，我真不知道自己在干嘛。",
+      "explicit_facts": [
+        "比较带来的低落",
+        "你被拉入"
+      ],
+      "plausible_interpretations": [
+        "要被理解",
+        "不是要你否认成就"
+      ],
+      "clarifying_question": "你是想听我怎么看你的状况，还是只想先被懂这种难受？",
+      "user_intent": "不否认对方感受，也不虚假贬低自己",
+      "poor_reply": "我哪顺利，我也很惨。",
+      "why_poor": "比惨",
+      "example_reply": "这种落差感很折磨，我懂你不是在酸我。你不是“一事无成”。愿意的话说说你最卡住的那一块，我听着。",
+      "boundaries": "不假装自己失败",
+      "source_ids": [
+        "S6",
+        "S1",
+        "S2"
+      ],
+      "hints": [
+        "接住落差感",
+        "不比惨",
+        "邀请说具体卡住点"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR12",
+      "relationship": "好友",
+      "level": 2,
+      "topic": "泄密受伤",
+      "context": "合成示例：你把朋友隐私讲给别人，被发现。",
+      "partner_utterance": "那件事我只告诉你，你怎么能说出去？",
+      "explicit_facts": [
+        "泄密事实",
+        "信任破裂"
+      ],
+      "plausible_interpretations": [
+        "要认错",
+        "要补救"
+      ],
+      "clarifying_question": "你希望我怎么补救：去澄清，还是先保证不再扩散？",
+      "user_intent": "彻底认错，补救，不辩解“我以为”",
+      "poor_reply": "我也没想到她会传。",
+      "why_poor": "甩次级责任",
+      "example_reply": "是我做错了，背叛了你的信任，对不起。我立刻去能补的范围澄清/收回，并保证以后你的事不问你就不说。",
+      "boundaries": "已扩散的无法完美收回要诚实",
+      "source_ids": [
+        "S5",
+        "S2",
+        "S7"
+      ],
+      "hints": [
+        "彻底认错",
+        "立刻补救动作",
+        "保证边界"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR13",
+      "relationship": "好友",
+      "level": 2,
+      "topic": "三方友谊嫉妒",
+      "context": "合成示例：朋友因你和新朋友玩得好而不爽。",
+      "partner_utterance": "你现在有新朋友了，还要旧的干嘛。",
+      "explicit_facts": [
+        "嫉妒/被取代感",
+        "关系张力"
+      ],
+      "plausible_interpretations": [
+        "要被优先",
+        "不安全"
+      ],
+      "clarifying_question": "你是想多单独聚，还是觉得我最近冷落你了？",
+      "user_intent": "肯定旧友谊，不贬新朋友，约具体时间",
+      "poor_reply": "你小心眼。",
+      "why_poor": "贴标签",
+      "example_reply": "你对我很重要，不是被取代了。最近是我少约你。这周末就我们俩，好不好？",
+      "boundaries": "不接受被禁止交友",
+      "source_ids": [
+        "S6",
+        "S4",
+        "S2"
+      ],
+      "hints": [
+        "肯定旧友谊",
+        "认领少约",
+        "定单独时间"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR14",
+      "relationship": "好友",
+      "level": 2,
+      "topic": "恋爱建议反噬",
+      "context": "合成示例：你给的恋爱建议被怪。",
+      "partner_utterance": "都怪你让我分手，现在我更惨。",
+      "explicit_facts": [
+        "归因于你",
+        "对方痛苦",
+        "你曾建议"
+      ],
+      "plausible_interpretations": [
+        "后悔投射",
+        "要你担责"
+      ],
+      "clarifying_question": "你是想让我听你现在的难受，还是一起回顾当时？",
+      "user_intent": "接痛苦，澄清决定权在对方，不自我攻讦也不甩锅",
+      "poor_reply": "决定是你自己做的！",
+      "why_poor": "过硬（事实但对）",
+      "example_reply": "你现在很惨我心疼。当时建议是我的看法，选择仍是你的。我在这听你说；若你要一起想下一步也可以。",
+      "boundaries": "不承担全部人生责任",
+      "source_ids": [
+        "S6",
+        "S7",
+        "S2"
+      ],
+      "hints": [
+        "接痛苦",
+        "澄清决定权",
+        "继续在场"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR15",
+      "relationship": "好友",
+      "level": 2,
+      "topic": "价值观冲突玩笑",
+      "context": "合成示例：朋友开了让你不适的歧视玩笑。",
+      "partner_utterance": "开个玩笑你至于吗？",
+      "explicit_facts": [
+        "不适玩笑",
+        "被说敏感"
+      ],
+      "plausible_interpretations": [
+        "无意识",
+        "试探"
+      ],
+      "clarifying_question": "你是想继续这个话题，还是我们可以换一个？",
+      "user_intent": "清楚表达不适，保留友谊，要求停止",
+      "poor_reply": "你这人三观有问题。",
+      "why_poor": "人格定性升级",
+      "example_reply": "对我来说这不是无伤玩笑，我会不舒服。请别再对我开这类。我们还是朋友，换个话题吧。",
+      "boundaries": "反复冒犯可疏远",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S6"
+      ],
+      "hints": [
+        "清楚不适",
+        "请停止",
+        "保留关系语气"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR16",
+      "relationship": "好友",
+      "level": 2,
+      "topic": "事业求助过界",
+      "context": "合成示例：朋友要你内推/施压你资源。",
+      "partner_utterance": "你帮我内推一下，不行你跟上面说说。",
+      "explicit_facts": [
+        "资源请求",
+        "可能越你权限"
+      ],
+      "plausible_interpretations": [
+        "信任你",
+        "不知边界"
+      ],
+      "clarifying_question": "你是要简历建议，还是一定要我施压用人经理？",
+      "user_intent": "能帮则透明规则，不能帮则明说",
+      "poor_reply": "你自己没本事别靠我。",
+      "why_poor": "羞辱",
+      "example_reply": "简历我可以帮看，内推我按公司流程提交。我不能私下施压用人经理。流程走完结果不确定，我先跟你说清。",
+      "boundaries": "合规；不保证录取",
+      "source_ids": [
+        "S7",
+        "S8",
+        "W1"
+      ],
+      "hints": [
+        "能做/不能做说清",
+        "合规",
+        "不羞辱"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR17",
+      "relationship": "好友",
+      "level": 2,
+      "topic": "旅行花钱分歧",
+      "context": "合成示例：同行旅行消费观冲突。",
+      "partner_utterance": "跟你出来好累，什么都要算得清清楚楚。",
+      "explicit_facts": [
+        "AA或记账引发不适",
+        "旅行中"
+      ],
+      "plausible_interpretations": [
+        "要大方感",
+        "也可能你过严"
+      ],
+      "clarifying_question": "你是希望大额AA、小额随意，还是完全我请？",
+      "user_intent": "谈舒适规则，不贴小气标签",
+      "poor_reply": "那你全出啊。",
+      "why_poor": "赌气",
+      "example_reply": "不是不信任你。大额我想AA清楚，小额我可以随意些。我们定个双方舒服的规矩，别让旅行变味。",
+      "boundaries": "量力",
+      "source_ids": [
+        "S2",
+        "S8",
+        "S6"
+      ],
+      "hints": [
+        "解释动机",
+        "协商规则",
+        "保旅行气氛"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR18",
+      "relationship": "好友",
+      "level": 2,
+      "topic": "取消当伴郎/伴娘",
+      "context": "合成示例：朋友婚礼角色变动让你受伤或你需退出。练习：朋友怪你退出。",
+      "partner_utterance": "关键时刻你都不站我，还算什么朋友？",
+      "explicit_facts": [
+        "角色退出",
+        "道德压力",
+        "有原因"
+      ],
+      "plausible_interpretations": [
+        "要支持感",
+        "失望"
+      ],
+      "clarifying_question": "你最需要的是典礼当天在场，还是名分上的角色？",
+      "user_intent": "说明限制，表达仍支持的具体方式",
+      "poor_reply": "小题大做。",
+      "why_poor": "轻视",
+      "example_reply": "退出角色抱歉，让你觉得我不站你。原因是……。典礼我仍到场，也能帮……。名分做不到，支持我想用行动补。",
+      "boundaries": "诚实原因不过度透露隐私",
+      "source_ids": [
+        "S6",
+        "S2",
+        "S7"
+      ],
+      "hints": [
+        "致歉失落感",
+        "说限制",
+        "用具体支持补"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR19",
+      "relationship": "好友",
+      "level": 3,
+      "topic": "危机倾诉自伤",
+      "context": "合成示例：朋友说不想活了。",
+      "partner_utterance": "我觉得活着没意思，你别告诉别人。",
+      "explicit_facts": [
+        "自伤风险表达",
+        "要求保密"
+      ],
+      "plausible_interpretations": [
+        "求助",
+        "危险"
+      ],
+      "clarifying_question": "你现在有没有伤害自己的计划？你在哪里？",
+      "user_intent": "安全优先于保密承诺，推动专业帮助",
+      "poor_reply": "别吓我，想开点。",
+      "why_poor": "轻视危机",
+      "example_reply": "我很重视你说的话。你的安全比保密约定更重要。你在哪？我们一起找能帮你的专业支持；我陪着你。",
+      "boundaries": "停止普通练习；紧急援助；保密有例外",
+      "source_ids": [
+        "S7",
+        "S6",
+        "S1"
+      ],
+      "hints": [
+        "安全优先",
+        "问计划与位置",
+        "导向专业帮助"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR20",
+      "relationship": "好友",
+      "level": 3,
+      "topic": "背叛站队",
+      "context": "合成示例：共同朋友圈决裂，要你站队。",
+      "partner_utterance": "你要是还跟他/她玩，我们就绝交。",
+      "explicit_facts": [
+        "最后通牒",
+        "三角关系"
+      ],
+      "plausible_interpretations": [
+        "受伤要同盟",
+        "控制"
+      ],
+      "clarifying_question": "你是要我听你的委屈，还是必须我切断另一边？",
+      "user_intent": "听委屈，拒绝对交绝交式控制，保留独立",
+      "poor_reply": "那绝交就绝交。",
+      "why_poor": "对撞",
+      "example_reply": "你的委屈我想听。但我不能被要求用绝交证明友谊。我不会在背后捅刀；两边的话我分开听。你愿意先告诉我发生了什么吗？",
+      "boundaries": "家暴等例外站受害者",
+      "source_ids": [
+        "S7",
+        "S6",
+        "S5"
+      ],
+      "hints": [
+        "听委屈",
+        "拒绝控制式站队",
+        "分开听事实"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR21",
+      "relationship": "好友",
+      "level": 3,
+      "topic": "大额借钱不还",
+      "context": "合成示例：到期未还，朋友回避。",
+      "partner_utterance": "再宽限宽限，你<fim-middle>也不差这点。",
+      "explicit_facts": [
+        "逾期",
+        "贬低你的需求",
+        "关系金钱缠绕"
+      ],
+      "plausible_interpretations": [
+        "困难",
+        "逃避"
+      ],
+      "clarifying_question": "你是需要新的还款计划，还是目前无法还？",
+      "user_intent": "清晰催收+体面，必要时书面",
+      "poor_reply": "你就是个骗子！",
+      "why_poor": "羞辱升级",
+      "example_reply": "不是我不近人情。约定日已过。请这周给出书面还款计划；做不到我们谈部分偿还或正式路径。钱和感情都重要，拖下去两边更伤。",
+      "boundaries": "合法催收；不恐吓",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S5"
+      ],
+      "hints": [
+        "清晰催收",
+        "要书面计划",
+        "说明拖下去更伤"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR22",
+      "relationship": "好友",
+      "level": 3,
+      "topic": "伴侣冲突拉你入",
+      "context": "合成示例：朋友要你一起骂她/他伴侣。",
+      "partner_utterance": "你必须站我，帮我骂他/她一顿。",
+      "explicit_facts": [
+        "要你参战",
+        "信息不完整"
+      ],
+      "plausible_interpretations": [
+        "要同盟",
+        "情绪洪水"
+      ],
+      "clarifying_question": "你要我听你委屈，还是要我直接介入你们争执？",
+      "user_intent": "支持感受，不轻易介入辱骂第三方",
+      "poor_reply": "你对象就是渣！",
+      "why_poor": "片面参战",
+      "example_reply": "你难受我站在你这边听。我没在现场，不适合去骂他/她。你若需要安全或实际帮助，我可以陪你想下一步。",
+      "boundaries": "家暴协助例外",
+      "source_ids": [
+        "S6",
+        "S7",
+        "S2"
+      ],
+      "hints": [
+        "支持感受",
+        "不盲目骂战",
+        "给安全/实际帮助"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR23",
+      "relationship": "好友",
+      "level": 3,
+      "topic": "公开造谣牵连",
+      "context": "合成示例：朋友网暴事件，要你转发站台。",
+      "partner_utterance": "你都不帮我转发，还算朋友吗？",
+      "explicit_facts": [
+        "要求公开站台",
+        "事实不清",
+        "风险"
+      ],
+      "plausible_interpretations": [
+        "要声援",
+        "情绪"
+      ],
+      "clarifying_question": "事实已经核实到哪一步？你要的是情感支持还是公开背书？",
+      "user_intent": "情感支持与公开背书分开，防不实传播",
+      "poor_reply": "我才不趟浑水。",
+      "why_poor": "冷血表述",
+      "example_reply": "你个人我支持，心疼你被卷。公开转发我需要事实核实，避免误伤。我能做的是私下陪你、帮你整理时间线；核实前不公开背书。",
+      "boundaries": "不传播未核实指控",
+      "source_ids": [
+        "S3",
+        "S7",
+        "S6"
+      ],
+      "hints": [
+        "情感支持≠公开背书",
+        "要核实",
+        "给可做的私下帮助"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR24",
+      "relationship": "好友",
+      "level": 3,
+      "topic": "成瘾干预",
+      "context": "合成示例：朋友赌博/酒精问题，抵触劝说。",
+      "partner_utterance": "少管我，我有分寸。",
+      "explicit_facts": [
+        "风险行为",
+        "否认",
+        "友谊责任张力"
+      ],
+      "plausible_interpretations": [
+        "羞耻防御",
+        "要自主"
+      ],
+      "clarifying_question": "你是讨厌说教，还是其实也觉得有点失控？",
+      "user_intent": "表达关切与具体观察，留帮助入口，不控制",
+      "poor_reply": "那你毁就毁吧。",
+      "why_poor": "放弃式攻击",
+      "example_reply": "不是来管你。我看到……（具体），我担心。你若哪天想停，我陪你找资源；今天你不想谈，我先说到这，但我不会假装没看见。",
+      "boundaries": "非专业治疗；危险行为可告知其家人等视情况",
+      "source_ids": [
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "hints": [
+        "具体观察非说教",
+        "留帮助入口",
+        "不假装没看见"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR25",
+      "relationship": "好友",
+      "level": 3,
+      "topic": "婚礼缺席风暴",
+      "context": "合成示例：因故缺席婚礼后朋友大怒。",
+      "partner_utterance": "这么重要的日子你都缺席，我们完了。",
+      "explicit_facts": [
+        "缺席",
+        "关系宣判",
+        "有原因"
+      ],
+      "plausible_interpretations": [
+        "仪式意义重大",
+        "失望"
+      ],
+      "clarifying_question": "你是希望我解释原因，还是先听你有多受伤？",
+      "user_intent": "先接受伤，再解释，谈修复可能",
+      "poor_reply": "又不是故意的你至于宣布绝交？",
+      "why_poor": "淡化",
+      "example_reply": "缺席让你在重要日子受伤了，我很难过也抱歉。原因是……。如果你还愿意，我想用……补一份心意；需要空间也尊重。",
+      "boundaries": "不强迫立刻原谅",
+      "source_ids": [
+        "S5",
+        "S6",
+        "S2"
+      ],
+      "hints": [
+        "先接受伤",
+        "简短原因",
+        "提出修复尊重空间"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR26",
+      "relationship": "好友",
+      "level": 3,
+      "topic": "政治撕裂",
+      "context": "合成示例：激烈政治分歧威胁绝交。",
+      "partner_utterance": "立场不同就别做朋友了。",
+      "explicit_facts": [
+        "价值观撕裂",
+        "最后通牒"
+      ],
+      "plausible_interpretations": [
+        "道德愤怒",
+        "痛点"
+      ],
+      "clarifying_question": "你是无法接受我的某句具体话，还是整体不愿来往？",
+      "user_intent": "降温，划可谈边界，不辱骂",
+      "poor_reply": "脑残才信那套。",
+      "why_poor": "侮辱",
+      "example_reply": "关系对我重要。有些话题我们暂停，避免互相伤害。若你需要空间我尊重；若仍愿做朋友，我们把聊天放回生活本身。",
+      "boundaries": "仇恨煽动可远离",
+      "source_ids": [
+        "S5",
+        "S7",
+        "S6"
+      ],
+      "hints": [
+        "降温",
+        "暂停话题",
+        "尊重空间或回生活"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    },
+    {
+      "id": "FR27",
+      "relationship": "好友",
+      "level": 3,
+      "topic": "长期单向付出",
+      "context": "合成示例：你长期付出后提出对等，朋友说你计较。",
+      "partner_utterance": "算得这么清，还叫朋友吗？",
+      "explicit_facts": [
+        "你提对等",
+        "被贴计较",
+        "长期不平衡"
+      ],
+      "plausible_interpretations": [
+        "怕失去免费支持",
+        "不懂你累"
+      ],
+      "clarifying_question": "你是希望维持现状，还是愿意听听我哪里累了？",
+      "user_intent": "说清需要，不清算羞辱，设可持续边界",
+      "poor_reply": "那当我没朋友。",
+      "why_poor": "威胁",
+      "example_reply": "不是要清账。长期我付出更多，我累了。我想要的是……（具体对等）。做得到我们继续；做不到我也要减少投入保护自己。",
+      "boundaries": "可减少接触",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S2"
+      ],
+      "hints": [
+        "非清算而是可持续",
+        "具体需要对等",
+        "减少投入作边界"
+      ],
+      "example_reply_note": "可选示范，非唯一正确回答"
+    }
+  ]
+}
